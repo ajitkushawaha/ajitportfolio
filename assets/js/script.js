@@ -157,3 +157,34 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+function sendEmail() {
+  emailjs.sendForm('service_ct5qzcj', 'template_x8y1tvv', '#contact-form')
+    .then(function() {
+      showModal()
+      document.getElementById('contact-form').reset(); // Reset form fields after submission
+    }, function(error) {
+      alert('Failed to send the message. Please try again later.');
+      console.log('FAILED...', error);
+    });
+}
+
+
+  // Function to show the modal
+  function showModal() {
+    document.getElementById('thankYouModal').style.display = 'block';
+  }
+
+  // Function to close the modal
+  function closeModal() {
+    document.getElementById('thankYouModal').style.display = 'none';
+  }
+
+  // Optional: Close modal when clicking outside of it
+  window.onclick = function(event) {
+    if (event.target == document.getElementById('thankYouModal')) {
+      closeModal();
+    }
+  }
+
