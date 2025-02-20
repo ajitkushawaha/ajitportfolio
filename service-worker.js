@@ -4,11 +4,11 @@ self.addEventListener("install", (event) => {
         return cache.addAll([
           "/",
           "/index.html",
-          "/assets/icon-192.png",
-          "/assets/icon-512.png",
+          "/assets/images/logosvg.png",
+          "/assets/images/logoica.png",
           "/manifest.json",
-          "/styles.css",
-          "/script.js",
+          "/assets/css/styles.css",
+          "/assets/js/script.js",
         ]);
       })
     );
