@@ -75,6 +75,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="manifest" href="manifest.json">
+
   </head>
 
   <body>
@@ -1322,6 +1324,45 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/service-worker.js")
+      .then(() => console.log("Service Worker Registered"))
+      .catch((error) => console.log("Service Worker Error:", error));
+  }
+</script>
+<script>
+  let deferredPrompt;
+
+  window.addEventListener("beforeinstallprompt", (event) => {
+    event.preventDefault();
+    deferredPrompt = event;
+
+    const installButton = document.createElement("button");
+    installButton.innerText = "Install AjitKushwaha.online";
+    installButton.style.position = "fixed";
+    installButton.style.bottom = "20px";
+    installButton.style.right = "20px";
+    installButton.style.padding = "10px 20px";
+    installButton.style.backgroundColor = "#000";
+    installButton.style.color = "#fff";
+    installButton.style.border = "none";
+    installButton.style.cursor = "pointer";
+
+    document.body.appendChild(installButton);
+
+    installButton.addEventListener("click", () => {
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then((choice) => {
+        if (choice.outcome === "accepted") {
+          console.log("User installed the PWA");
+        }
+        installButton.remove();
+      });
+    });
+  });
+</script>
+
     
   </body>
 </html>
