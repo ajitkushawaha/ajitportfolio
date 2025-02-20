@@ -1324,11 +1324,8 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <script>
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("/service-worker.js")
-      .then(() => console.log("Service Worker Registered"))
-      .catch((error) => console.log("Service Worker Error:", error));
-  }
+      
+ 
 </script>
 <script>
   let deferredPrompt;
@@ -1360,6 +1357,14 @@
       });
     });
   });
+
+  if ("serviceWorker" in navigator) {
+  navigator.serviceWorker
+    .register("/service-worker.js")
+    .then(() => console.log("Service Worker Registered"))
+    .catch((error) => console.log("Service Worker Registration Failed:", error));
+}
+
 </script>
 
     
