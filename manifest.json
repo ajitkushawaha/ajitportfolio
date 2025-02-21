@@ -9,12 +9,12 @@
       {
         "src": "/assets/images/logosvg.png",
         "sizes": "192x192",
-        "type": "image/ico"
+        "type": "image/png"
       },
       {
         "src":  "/assets/images/logoica.png",
         "sizes": "512x512",
-        "type": "image/svg"
+        "type": "image/png"
       }
     ]
   }
