@@ -161,7 +161,7 @@ body { background: var(--smoky-black); }
 #toast {
     visibility: hidden;
     position: fixed;
-    bottom: 30px;
+    top: 20px;
     right: 20px;
     background-color: black;
     color: white;
