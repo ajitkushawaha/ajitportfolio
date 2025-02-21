@@ -1305,6 +1305,7 @@
           </div>
         </article>
       </div>
+      <div id="toast">PWA is available for installation!</div>
     </main>
 
     <!--
@@ -1328,11 +1329,14 @@
  
 </script>
 <script>
-  let deferredPrompt;
-
   window.addEventListener("beforeinstallprompt", (event) => {
     event.preventDefault();
     deferredPrompt = event;
+
+    // Show a toast notification
+    const toast = document.getElementById("toast");
+    toast.style.visibility = "visible";
+    setTimeout(() => (toast.style.visibility = "hidden"), 3000);
 
     const installButton = document.createElement("button");
     installButton.innerText = "Install AjitKushwaha.online";
@@ -1352,6 +1356,9 @@
       deferredPrompt.userChoice.then((choice) => {
         if (choice.outcome === "accepted") {
           console.log("User installed the PWA");
+          toast.innerText = "PWA installed successfully!";
+          toast.style.visibility = "visible";
+          setTimeout(() => (toast.style.visibility = "hidden"), 3000);
         }
         installButton.remove();
       });
