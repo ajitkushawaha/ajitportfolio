@@ -158,7 +158,16 @@ html { font-family: var(--ff-poppins); }
 body { background: var(--smoky-black); }
 
 
-
+#toast {
+    visibility: hidden;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+  }
 
 
 /*-----------------------------------*\
