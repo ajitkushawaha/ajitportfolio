@@ -3,24 +3,46 @@
 import React, { useState, useEffect } from 'react'
 import Sidebar from '@/components/Sidebar'
 import Navbar from '@/components/Navbar'
-import About from '@/components/About' 
+import About from '@/components/About'
 import Resume from '@/components/Resume'
 import Portfolio from '@/components/Portfolio'
 import Blog from '@/components/Blog'
 import Contact from '@/components/Contact'
 import TestimonialModal from '@/components/TestimonialModal'
 import InstallButton from '@/components/InstallButton'
+import ThemeToggle from '@/components/ThemeToggle'
+import KeyboardShortcuts from '@/components/KeyboardShortcuts'
+import ScrollToTop from '@/components/ScrollToTop'
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('about')
-  const [sidebarOpen, setSidebarOpen] = useState(false)
   const [modalOpen, setModalOpen] = useState(false)
   const [selectedTestimonial, setSelectedTestimonial] = useState<any>(null)
 
   const sections = ['about', 'resume', 'portfolio', 'blog', 'contact']
 
+  // Load active section from localStorage on mount
+  useEffect(() => {
+    const savedSection = localStorage.getItem('activeSection')
+    if (savedSection && sections.includes(savedSection)) {
+      setActiveSection(savedSection)
+    }
+  }, [])
+
   const handleNavClick = (section: string) => {
     setActiveSection(section)
+    // Save to localStorage
+    localStorage.setItem('activeSection', section)
+    
+    // Smooth scroll to section
+    const element = document.getElementById(section)
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest'
+      })
+    }
   }
 
   const handleTestimonialClick = (testimonial: any) => {
@@ -35,20 +57,18 @@ export default function Home() {
 
   return (
     <main>
-      <Sidebar 
-        isOpen={sidebarOpen} 
-        onToggle={() => setSidebarOpen(!sidebarOpen)} 
-      />
+      <ThemeToggle />
+      <KeyboardShortcuts />
+      <ScrollToTop />
       
-      <div className="main-content">
-        <Navbar 
-          activeSection={activeSection} 
-          onNavClick={handleNavClick} 
-        />
+      <Sidebar />
 
+      <div className="main-content">
+        <Navbar activeSection={activeSection} onNavClick={handleNavClick} />
+        
         <About 
           isActive={activeSection === 'about'} 
-          onTestimonialClick={handleTestimonialClick}
+          onTestimonialClick={handleTestimonialClick} 
         />
         
         <Resume isActive={activeSection === 'resume'} />
@@ -65,7 +85,7 @@ export default function Home() {
         testimonial={selectedTestimonial} 
         onClose={closeModal} 
       />
-
+      
       <InstallButton />
       
       <div id="toast">Ajit's Profile is available for installation!</div>

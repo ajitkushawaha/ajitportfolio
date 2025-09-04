@@ -21,7 +21,7 @@ export default function Navbar({ activeSection, onNavClick }: NavbarProps) {
       <ul className="navbar-list">
         {navItems.map((item) => (
           <li key={item.id} className="navbar-item">
-            <button 
+            <button
               className={`navbar-link ${activeSection === item.id ? 'active' : ''}`}
               onClick={() => onNavClick(item.id)}
             >
