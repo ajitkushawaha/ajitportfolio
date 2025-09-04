@@ -13,16 +13,11 @@ import {
   MessageCircle
 } from 'lucide-react'
 
-interface SidebarProps {
-  isOpen: boolean
-  onToggle: () => void
-}
-
-export default function Sidebar({ isOpen, onToggle }: SidebarProps) {
-  const [showContacts, setShowContacts] = useState(false)
+export default function Sidebar() {
+  const [showContacts, setShowContacts] = useState(true)
 
   return (
-    <aside className={`sidebar ${isOpen ? 'active' : ''}`}>
+    <aside className={`sidebar ${showContacts ? 'active' : ''}`}>
       <div className="sidebar-info">
         <figure className="avatar-box">
           <img 
@@ -34,14 +29,14 @@ export default function Sidebar({ isOpen, onToggle }: SidebarProps) {
 
         <div className="info-content">
           <h1 className="name" title="Ajit Kushwaha">Ajit Kushwaha</h1>
-          <p className="title">React developer</p>
+          <p className="title">React  Developer</p>
         </div>
 
         <button 
           className="info_more-btn" 
           onClick={() => setShowContacts(!showContacts)}
         >
-          <span>Show Contacts</span>
+          <span>{showContacts ? 'Hide Contacts' : 'Show Contacts'}</span>
           <ChevronDown size={16} />
         </button>
       </div>
@@ -143,6 +138,10 @@ export default function Sidebar({ isOpen, onToggle }: SidebarProps) {
           </li>
         </ul>
       </div>
+      <div className='brand-container'>
+        <p className="brand">ajitReact.in</p>
+      </div>
+
     </aside>
   )
 }
