@@ -3,11 +3,11 @@
 import React, { useState, useEffect } from 'react'
 
 export default function InstallButton() {
-  const [deferredPrompt, setDeferredPrompt] = useState<any>(null)
+  const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null)
   const [showInstallButton, setShowInstallButton] = useState(false)
 
   useEffect(() => {
-    const handleBeforeInstallPrompt = (event: Event) => {
+    const handleBeforeInstallPrompt = (event: BeforeInstallPromptEvent) => {
       event.preventDefault()
       setDeferredPrompt(event)
       setShowInstallButton(true)
@@ -19,7 +19,7 @@ export default function InstallButton() {
       console.log('PWA was installed')
     }
 
-    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt)
+    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt as EventListener)
     window.addEventListener('appinstalled', handleAppInstalled)
 
     return () => {
@@ -33,7 +33,7 @@ export default function InstallButton() {
 
     deferredPrompt.prompt()
     const { outcome } = await deferredPrompt.userChoice
-    
+
     if (outcome === 'accepted') {
       console.log('User accepted the install prompt')
       const toast = document.getElementById('toast')
@@ -45,7 +45,7 @@ export default function InstallButton() {
         }, 3000)
       }
     }
-    
+
     setDeferredPrompt(null)
     setShowInstallButton(false)
   }
@@ -53,7 +53,7 @@ export default function InstallButton() {
   if (!showInstallButton) return null
 
   return (
-    <button 
+    <button
       className="install-btn"
       title="Install Ajit's Profile"
       onClick={handleInstallClick}

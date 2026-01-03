@@ -3,9 +3,15 @@
 import React from 'react'
 import { X } from 'lucide-react'
 
+interface Testimonial {
+  name: string
+  avatar: string
+  text: string
+}
+
 interface TestimonialModalProps {
   isOpen: boolean
-  testimonial: any
+  testimonial: Testimonial | null
   onClose: () => void
 }
 
@@ -15,7 +21,7 @@ export default function TestimonialModal({ isOpen, testimonial, onClose }: Testi
   return (
     <>
       <div className="overlay active" onClick={onClose}></div>
-      
+
       <div className="modal-container active">
         <section className="testimonials-modal">
           <button className="modal-close-btn" onClick={onClose}>
@@ -24,10 +30,10 @@ export default function TestimonialModal({ isOpen, testimonial, onClose }: Testi
 
           <div className="modal-img-wrapper">
             <figure className="modal-avatar-box">
-              <img 
-                src={testimonial.avatar} 
-                alt={testimonial.name} 
-                width="80" 
+              <img
+                src={testimonial.avatar}
+                alt={testimonial.name}
+                width="80"
               />
             </figure>
             <img src="/assets/images/icon-quote.svg" alt="quote icon" />

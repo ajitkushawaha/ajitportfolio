@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import { Sun, Moon, Loader2 } from 'lucide-react'
 
 export default function ThemeToggle() {
@@ -21,6 +21,24 @@ export default function ThemeToggle() {
     }
   }, [])
 
+  const toggleTheme = useCallback(async () => {
+    if (isLoading) return
+    
+    setIsLoading(true)
+    
+    // Simulate a small delay for better UX
+    await new Promise(resolve => setTimeout(resolve, 150))
+    
+    setTheme((prevTheme) => {
+      const newTheme = prevTheme === 'light' ? 'dark' : 'light'
+      document.documentElement.setAttribute('data-theme', newTheme)
+      localStorage.setItem('theme', newTheme)
+      return newTheme
+    })
+    
+    setIsLoading(false)
+  }, [isLoading])
+
   // Keyboard shortcut handler
   useEffect(() => {
     const handleKeyPress = (event: KeyboardEvent) => {
@@ -33,23 +51,7 @@ export default function ThemeToggle() {
 
     document.addEventListener('keydown', handleKeyPress)
     return () => document.removeEventListener('keydown', handleKeyPress)
-  }, [theme])
-
-  const toggleTheme = async () => {
-    if (isLoading) return
-    
-    setIsLoading(true)
-    
-    // Simulate a small delay for better UX
-    await new Promise(resolve => setTimeout(resolve, 150))
-    
-    const newTheme = theme === 'light' ? 'dark' : 'light'
-    setTheme(newTheme)
-    document.documentElement.setAttribute('data-theme', newTheme)
-    localStorage.setItem('theme', newTheme)
-    
-    setIsLoading(false)
-  }
+  }, [toggleTheme])
 
   // Don't render anything until mounted to avoid hydration issues
   if (!mounted) {

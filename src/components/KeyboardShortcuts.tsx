@@ -1,7 +1,6 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
-import { Keyboard } from 'lucide-react'
 
 export default function KeyboardShortcuts() {
   const [showShortcuts, setShowShortcuts] = useState(false)

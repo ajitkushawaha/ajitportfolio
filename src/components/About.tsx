@@ -50,7 +50,7 @@ export default function About({ isActive, onTestimonialClick }: AboutProps) {
 
       <section className="about-text">
         <p>
-          I'm a React and MERN Stack Developer based in Ahmedabad, India, with over 2 year of experience in creating dynamic and responsive web applications.
+          I&apos;m a React and MERN Stack Developer based in Ahmedabad, India, with over 2 year of experience in creating dynamic and responsive web applications.
           I specialize in building modern, scalable web solutions using cutting-edge technologies.
         </p>
 
@@ -63,7 +63,7 @@ export default function About({ isActive, onTestimonialClick }: AboutProps) {
 
       {/* Service */}
       <section className="service">
-        <h3 className="h3 service-title">What i'm doing</h3>
+        <h3 className="h3 service-title">What i&apos;m doing</h3>
 
         <ul className="service-list">
           <li className="service-item">

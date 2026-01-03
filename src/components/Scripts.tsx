@@ -10,20 +10,20 @@ export default function Scripts() {
       try {
         const savedTheme = localStorage.getItem('theme');
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        
+
         let theme = 'light'; // default
-        
+
         if (savedTheme && (savedTheme === 'light' || savedTheme === 'dark')) {
           theme = savedTheme;
         } else if (prefersDark) {
           theme = 'dark';
         }
-        
+
         document.documentElement.setAttribute('data-theme', theme);
-        
+
         // Also set a class for additional styling if needed
         document.documentElement.classList.toggle('dark', theme === 'dark');
-      } catch (e) {
+      } catch {
         // Fallback to light theme if localStorage is not available
         document.documentElement.setAttribute('data-theme', 'light');
         document.documentElement.classList.remove('dark');
@@ -52,8 +52,8 @@ export default function Scripts() {
 
     // EmailJS initialization
     const initEmailJS = () => {
-      if (typeof window !== 'undefined' && (window as any).emailjs) {
-        (window as any).emailjs.init({
+      if (typeof window !== 'undefined' && window.emailjs) {
+        window.emailjs.init({
           publicKey: "TI2qhqsmhp02z3SZd",
         });
       } else {
@@ -70,11 +70,11 @@ export default function Scripts() {
   return (
     <>
       {/* EmailJS */}
-      <Script 
+      <Script
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
         strategy="afterInteractive"
       />
-      
+
       {/* Google AdSense */}
       <Script
         async

@@ -35,13 +35,13 @@ export default function Head() {
       <meta name="google-site-verification" content="your-google-verification-code" />
       <meta name="msvalidate.01" content="your-bing-verification-code" />
       <meta name="yandex-verification" content="your-yandex-verification-code" />
-      
+
       {/* Canonical URL */}
       <link rel="canonical" href="https://ajitReact.in/" />
-      
+
       {/* Alternate Languages */}
-      <link rel="alternate" href="https://ajitReact.in/" hreflang="en" />
-      <link rel="alternate" href="https://ajitReact.in/" hreflang="x-default" />
+      <link rel="alternate" href="https://ajitReact.in/" hrefLang="en" />
+      <link rel="alternate" href="https://ajitReact.in/" hrefLang="x-default" />
 
       {/* DNS Prefetch */}
       <link rel="dns-prefetch" href="//fonts.googleapis.com" />

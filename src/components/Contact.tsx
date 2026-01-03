@@ -19,7 +19,7 @@ export default function Contact({ isActive }: ContactProps) {
   useEffect(() => {
     // Check if EmailJS is available
     const checkEmailJS = () => {
-      if (typeof window !== 'undefined' && (window as any).emailjs) {
+      if (typeof window !== 'undefined' && window.emailjs) {
         setEmailjsReady(true)
       } else {
         // Retry after a short delay
@@ -39,14 +39,14 @@ export default function Contact({ isActive }: ContactProps) {
 
   const sendEmail = async (e: React.FormEvent) => {
     e.preventDefault()
-    
+
     if (!emailjsReady) {
       alert('Email service is not ready. Please try again in a moment.')
       return
     }
-    
+
     try {
-      const emailjs = (window as any).emailjs
+      const emailjs = window.emailjs
       if (emailjs) {
         await emailjs.send(
           'service_id', // Replace with your actual service ID
@@ -58,10 +58,10 @@ export default function Contact({ isActive }: ContactProps) {
           },
           'TI2qhqsmhp02z3SZd' // Your public key
         )
-        
+
         setShowThankYou(true)
         setFormData({ user_name: '', user_email: '', message: '' })
-        
+
         setTimeout(() => {
           setShowThankYou(false)
         }, 3000)
@@ -84,9 +84,9 @@ export default function Contact({ isActive }: ContactProps) {
 
       <section className="mapbox" data-mapbox>
         <figure>
-          <iframe 
-            width="400" 
-            height="300" 
+          <iframe
+            width="400"
+            height="300"
             loading="lazy"
             src="https://maps.google.com/maps?width=400&amp;height=300&amp;hl=en&amp;q=anjali%20circle%20ahmedabad+(Sroj%20flat%20)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             title="Location Map"
@@ -101,32 +101,32 @@ export default function Contact({ isActive }: ContactProps) {
 
         <form className="form" onSubmit={sendEmail}>
           <div className="input-wrapper">
-            <input 
-              type="text" 
-              name="user_name" 
-              className="form-input" 
-              placeholder="Full name" 
-              required 
+            <input
+              type="text"
+              name="user_name"
+              className="form-input"
+              placeholder="Full name"
+              required
               value={formData.user_name}
               onChange={handleInputChange}
             />
 
-            <input 
-              type="email" 
-              name="user_email" 
-              className="form-input" 
-              placeholder="Email address" 
-              required 
+            <input
+              type="email"
+              name="user_email"
+              className="form-input"
+              placeholder="Email address"
+              required
               value={formData.user_email}
               onChange={handleInputChange}
             />
           </div>
 
-          <textarea 
-            name="message" 
-            className="form-input" 
-            placeholder="Your Message" 
-            required 
+          <textarea
+            name="message"
+            className="form-input"
+            placeholder="Your Message"
+            required
             value={formData.message}
             onChange={handleInputChange}
           />
