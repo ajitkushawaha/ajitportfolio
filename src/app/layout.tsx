@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code', // Add your Google Search Console verification code
+    google: 'YsjDL9H22Tg73GQCs3SPV8BCAwk8xMnZoNJaAoI66Yo', // Add your Google Search Console verification code
   },
   openGraph: {
     type: 'website',
@@ -108,7 +108,7 @@ export const metadata: Metadata = {
     'distribution': 'Global',
     'rating': 'General',
     'revisit-after': '7 days',
-    'google-site-verification': 'your-google-verification-code',
+    'google-site-verification': 'YsjDL9H22Tg73GQCs3SPV8BCAwk8xMnZoNJaAoI66Yo',
   },
 }
 
