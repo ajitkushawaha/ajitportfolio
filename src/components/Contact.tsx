@@ -90,9 +90,7 @@ export default function Contact({ isActive }: ContactProps) {
             loading="lazy"
             src="https://maps.google.com/maps?width=400&amp;height=300&amp;hl=en&amp;q=anjali%20circle%20ahmedabad+(Sroj%20flat%20)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             title="Location Map"
-          >
-            <a href="https://www.gps.ie/">gps devices</a>
-          </iframe>
+          />
         </figure>
       </section>
 

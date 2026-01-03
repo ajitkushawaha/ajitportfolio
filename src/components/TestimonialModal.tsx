@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import Image from 'next/image'
 import { X } from 'lucide-react'
 
 interface Testimonial {
@@ -30,13 +31,14 @@ export default function TestimonialModal({ isOpen, testimonial, onClose }: Testi
 
           <div className="modal-img-wrapper">
             <figure className="modal-avatar-box">
-              <img
+              <Image
                 src={testimonial.avatar}
                 alt={testimonial.name}
-                width="80"
+                width={80}
+                height={80}
               />
             </figure>
-            <img src="/assets/images/icon-quote.svg" alt="quote icon" />
+            <Image src="/assets/images/icon-quote.svg" alt="quote icon" width={35} height={35} />
           </div>
 
           <div className="modal-content">

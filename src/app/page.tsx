@@ -1,101 +1,50 @@
-'use client'
+import React from 'react'
+import HomeClient from '@/components/HomeClient'
+import { BlogPost } from '@/components/Blog'
 
-import React, { useState, useEffect } from 'react'
-import Sidebar from '@/components/Sidebar'
-import Navbar from '@/components/Navbar'
-import About from '@/components/About'
-import Resume from '@/components/Resume'
-import Portfolio from '@/components/Portfolio'
-import Blog from '@/components/Blog'
-import Contact from '@/components/Contact'
-import TestimonialModal from '@/components/TestimonialModal'
-import InstallButton from '@/components/InstallButton'
-import ThemeToggle from '@/components/ThemeToggle'
-import KeyboardShortcuts from '@/components/KeyboardShortcuts'
-import ScrollToTop from '@/components/ScrollToTop'
-
-interface Testimonial {
-  name: string
-  role: string
-  avatar: string
-  text: string
-  date: string
+async function getBlogPosts(): Promise<BlogPost[]> {
+  // This data is now fetched/defined on the server
+  return [
+    {
+      id: 1,
+      title: 'Research Paper in React',
+      category: 'Research',
+      date: 'Feb 23, 2023',
+      image: '/assets/images/research.png',
+      link: 'https://ijsart.com/unleashing-the-power-of-react-js-a-comprehensive-study-on-front-end-development-and-framework-analysis-66076',
+      description: 'A comprehensive study on front-end development and framework analysis'
+    },
+    {
+      id: 2,
+      title: 'Dev Disasters',
+      category: 'Coding',
+      date: 'Jan 14, 2025',
+      image: '/assets/images/devdisater.png',
+      link: 'https://www.linkedin.com/pulse/dev-disasters-hilarious-react-bugs-make-you-laugh-cry-ajit-kushwaha-awr8f?utm_source=share&utm_medium=member_android&utm_campaign=share_via',
+      description: 'Hilarious React Bugs That Will Make You Laugh (or Cry!) 🐛💻😂'
+    },
+    {
+      id: 3,
+      title: '🛠️ Promises vs. Async/Await',
+      category: 'Coding',
+      date: 'Dec 2, 2024',
+      image: 'https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fdxfi8d5r2n9ocze5magi.jpg',
+      link: 'https://dev.to/ajitkushawaha/promises-vs-asyncawait-whats-the-difference-2hh2',
+      description: "What's the Difference? 🤔"
+    },
+    {
+      id: 4,
+      title: 'Micro-Frontends',
+      category: 'Coding',
+      date: 'Jan 6, 2025',
+      image: '/assets/images/modaern.png',
+      link: 'https://www.linkedin.com/pulse/copy-micro-frontends-modern-approach-building-web-ajit-kushwaha-uiw5f/?trackingId=1%2FegxDLVRnG5IxIykDcDqg%3D%3D',
+      description: 'A Modern Approach to Building Scalable Web Applications'
+    }
+  ]
 }
 
-export default function Home() {
-  const [activeSection, setActiveSection] = useState('about')
-  const [modalOpen, setModalOpen] = useState(false)
-  const [selectedTestimonial, setSelectedTestimonial] = useState<Testimonial | null>(null)
-
-  // Load active section from localStorage on mount
-  useEffect(() => {
-    const sections = ['about', 'resume', 'portfolio', 'blog', 'contact']
-    const savedSection = localStorage.getItem('activeSection')
-    if (savedSection && sections.includes(savedSection)) {
-      setActiveSection(savedSection)
-    }
-  }, [])
-
-  const handleNavClick = (section: string) => {
-    setActiveSection(section)
-    // Save to localStorage
-    localStorage.setItem('activeSection', section)
-    
-    // Smooth scroll to section
-    const element = document.getElementById(section)
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-        inline: 'nearest'
-      })
-    }
-  }
-
-  const handleTestimonialClick = (testimonial: Testimonial) => {
-    setSelectedTestimonial(testimonial)
-    setModalOpen(true)
-  }
-
-  const closeModal = () => {
-    setModalOpen(false)
-    setSelectedTestimonial(null)
-  }
-
-  return (
-    <main>
-      <ThemeToggle />
-      <KeyboardShortcuts />
-      <ScrollToTop />
-      
-      <Sidebar />
-
-      <div className="main-content">
-        <Navbar activeSection={activeSection} onNavClick={handleNavClick} />
-        
-        <About 
-          isActive={activeSection === 'about'} 
-          onTestimonialClick={handleTestimonialClick} 
-        />
-        
-        <Resume isActive={activeSection === 'resume'} />
-        
-        <Portfolio isActive={activeSection === 'portfolio'} />
-        
-        <Blog isActive={activeSection === 'blog'} />
-        
-        <Contact isActive={activeSection === 'contact'} />
-      </div>
-
-      <TestimonialModal 
-        isOpen={modalOpen} 
-        testimonial={selectedTestimonial} 
-        onClose={closeModal} 
-      />
-      
-      <InstallButton />
-      
-      <div id="toast">Ajit&apos;s Profile is available for installation!</div>
-    </main>
-  )
+export default async function Home() {
+  const blogPosts = await getBlogPosts()
+  return <HomeClient blogPosts={blogPosts} />
 }

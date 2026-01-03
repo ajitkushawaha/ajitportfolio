@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import Image from 'next/image'
 
 interface Testimonial {
   name: string
@@ -68,7 +69,7 @@ export default function About({ isActive, onTestimonialClick }: AboutProps) {
         <ul className="service-list">
           <li className="service-item">
             <div className="service-icon-box">
-              <img src="/assets/images/icon-design.svg" alt="design icon" width="40" />
+              <Image src="/assets/images/icon-design.svg" alt="design icon" width={40} height={40} />
             </div>
 
             <div className="service-content-box">
@@ -104,7 +105,7 @@ export default function About({ isActive, onTestimonialClick }: AboutProps) {
 
           <li className="service-item">
             <div className="service-icon-box">
-              <img src="/assets/images/icon-dev.svg" alt="Web development icon" width="40" />
+              <Image src="/assets/images/icon-dev.svg" alt="Web development icon" width={40} height={40} />
             </div>
 
             <div className="service-content-box">
@@ -140,7 +141,7 @@ export default function About({ isActive, onTestimonialClick }: AboutProps) {
 
           <li className="service-item">
             <div className="service-icon-box">
-              <img src="/assets/images/icon-app.svg" alt="mobile app icon" width="40" />
+              <Image src="/assets/images/icon-app.svg" alt="mobile app icon" width={40} height={40} />
             </div>
 
             <div className="service-content-box">
@@ -176,7 +177,7 @@ export default function About({ isActive, onTestimonialClick }: AboutProps) {
 
           <li className="service-item">
             <div className="service-icon-box">
-              <img src="/assets/images/icon-photo.svg" alt="camera icon" width="40" />
+              <Image src="/assets/images/icon-photo.svg" alt="camera icon" width={40} height={40} />
             </div>
 
             <div className="service-content-box">
@@ -212,7 +213,7 @@ export default function About({ isActive, onTestimonialClick }: AboutProps) {
 
           <li className="service-item">
             <div className="service-icon-box">
-              <img src="/assets/images/icon-quote.svg" alt="chat icon" width="40" />
+              <Image src="/assets/images/icon-quote.svg" alt="chat icon" width={40} height={40} />
             </div>
 
             <div className="service-content-box">
@@ -248,7 +249,7 @@ export default function About({ isActive, onTestimonialClick }: AboutProps) {
 
           <li className="service-item">
             <div className="service-icon-box">
-              <img src="/assets/images/icon-design.svg" alt="design icon" width="40" />
+              <Image src="/assets/images/icon-design.svg" alt="design icon" width={40} height={40} />
             </div>
 
             <div className="service-content-box">
@@ -271,7 +272,7 @@ export default function About({ isActive, onTestimonialClick }: AboutProps) {
             <li key={index} className="testimonials-item">
               <div className="content-card" onClick={() => onTestimonialClick(testimonial)}>
                 <figure className="testimonials-avatar-box">
-                  <img src={testimonial.avatar} alt={testimonial.name} width="60" title={testimonial.name} />
+                  <Image src={testimonial.avatar} alt={testimonial.name} width={60} height={60} title={testimonial.name} />
                 </figure>
 
                 <h4 className="h4 testimonials-item-title">{testimonial.name}</h4>

@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
+import Image from 'next/image'
 import { 
   Mail, 
   Phone, 
@@ -20,10 +21,11 @@ export default function Sidebar() {
     <aside className={`sidebar ${showContacts ? 'active' : ''}`}>
       <div className="sidebar-info">
         <figure className="avatar-box">
-          <img 
-            src="https://avatars.githubusercontent.com/u/107255611?v=4"
+          <Image 
+            src="https://media.licdn.com/dms/image/v2/D4D03AQFM_v20Uk_HZQ/profile-displayphoto-scale_400_400/B4DZrrtTPaGwAg-/0/1764891116036?e=1769040000&v=beta&t=WHGhgpJOwRzZik6At2Zo9uaQeV93eiMT4UqU_ywZVdE"
             alt="Ajit Kushwaha - React and MERN Stack Developer" 
-            width="80" 
+            width={80}
+            height={80}
           />
         </figure>
 
@@ -51,8 +53,8 @@ export default function Sidebar() {
             </div>
             <div className="contact-info">
               <p className="contact-title">Email</p>
-              <a href="mailto:akk3311600@gmail.com" className="contact-link">
-                akk3311600@gmail.com
+              <a href="mailto:ajit.kushwaha.work@gmail.com" className="contact-link">
+                ajit.kushwaha.work@gmail.com
               </a>
             </div>
           </li>
@@ -117,7 +119,7 @@ export default function Sidebar() {
 
           <li className="social-item">
             <a 
-              href="https://ajitkushawaha.github.io" 
+              href="https://ajitreact.site" 
               className="social-link"
               target="_blank"
               rel="noopener noreferrer"
@@ -139,7 +141,7 @@ export default function Sidebar() {
         </ul>
       </div>
       <div className='brand-container'>
-        <p className="brand">ajitReact.in</p>
+        <p className="brand">www.ajitreact.site</p>
       </div>
 
     </aside>

@@ -1,18 +1,25 @@
 import React from 'react'
 import type { Metadata } from 'next'
+import { Poppins } from 'next/font/google'
 import './globals.css'
 import Scripts from '@/components/Scripts'
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: {
     default: 'Ajit Kushwaha (ajitReact) - React & MERN Stack Developer | Ahmedabad, India',
     template: '%s | Ajit Kushwaha - ajitReact'
   },
-  description: 'Ajit Kushwaha (ajitReact) is a passionate React and MERN Stack Developer based in Ahmedabad, India. Specializing in modern web applications, responsive design, and full-stack development with 1+ years of experience. Visit ajitReact.in for professional web development services.',
+  description: 'Ajit Kushwaha (ajitReact) is a passionate React and MERN Stack Developer based in Ahmedabad, India. Specializing in modern web applications, responsive design, and full-stack development with 1+ years of experience. Visit www.ajitreact.site for professional web development services.',
   keywords: [
     'Ajit Kushwaha',
     'ajitReact',
-    'ajitReact.in',
+    'www.ajitreact.site',
     'React developer',
     'MERN stack developer', 
     'JavaScript developer',
@@ -37,7 +44,7 @@ export const metadata: Metadata = {
     'e-commerce development',
     'mobile app development'
   ],
-  authors: [{ name: 'Ajit Kushwaha', url: 'https://ajitReact.in' }],
+  authors: [{ name: 'Ajit Kushwaha', url: 'https://www.ajitreact.site' }],
   creator: 'Ajit Kushwaha (ajitReact)',
   publisher: 'Ajit Kushwaha',
   formatDetection: {
@@ -45,7 +52,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://ajitReact.in'),
+  metadataBase: new URL('https://www.ajitreact.site'),
   alternates: {
     canonical: '/',
   },
@@ -66,9 +73,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://ajitReact.in',
+    url: 'https://www.ajitreact.site',
     title: 'Ajit Kushwaha (ajitReact) - React & MERN Stack Developer',
-    description: 'Ajit Kushwaha (ajitReact) is a passionate React and MERN Stack Developer based in Ahmedabad, India. Specializing in modern web applications and full-stack development. Visit ajitReact.in for professional web development services.',
+    description: 'Ajit Kushwaha (ajitReact) is a passionate React and MERN Stack Developer based in Ahmedabad, India. Specializing in modern web applications and full-stack development. Visit www.ajitreact.site for professional web development services.',
     siteName: 'Ajit Kushwaha Portfolio - ajitReact',
     images: [
       {
@@ -111,7 +118,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={poppins.className}>
       <head>
         {/* <script
           dangerouslySetInnerHTML={{
@@ -139,9 +146,6 @@ export default function RootLayout({
           }}
         /> */}
         <link rel="shortcut icon" href="/assets/images/logo.ico" type="image/x-icon" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body>

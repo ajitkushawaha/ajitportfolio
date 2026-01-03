@@ -23,11 +23,13 @@ export default function Resume({ isActive }: ResumeProps) {
 
   const experience = [
     {
-      title: 'React Developer (Freelance)',
-      company: 'Self-employed / Remote',
+      title: 'Co-Founder & CTO',
+      company: 'Codyn',
       period: 'Nov 2024 - Present',
-      description: 'Worked on multiple freelance projects including websites and web apps for CA firms, RakPolyplast, and Kwicklino. Built frontend using React.js, Tailwind CSS, and Material UI. Collaborated with designers to implement wireframes and performed manual testing using Excel-based test cases.'
-    },
+      description: 'Co-founded Codyn and leading the technology vision and execution. Architected and developed SaaS products including Kwicklingo. Built and maintained scalable web applications using React.js, Next.js, Node.js, and Tailwind CSS. Responsible for system design, product development, deployments, and technical decision-making.'
+    }
+    ,
+
     {
       title: 'React Developer',
       company: 'Conceptserve Technologies',
@@ -106,8 +108,8 @@ export default function Resume({ isActive }: ResumeProps) {
               </div>
 
               <div className="skill-progress-bg">
-                <div 
-                  className="skill-progress-fill" 
+                <div
+                  className="skill-progress-fill"
                   style={{ width: `${skill.percentage}%` }}
                 ></div>
               </div>

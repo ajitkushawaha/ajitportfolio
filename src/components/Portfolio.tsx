@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
+import Image from 'next/image'
 import { Eye } from 'lucide-react'
 
 interface PortfolioProps {
@@ -19,29 +20,31 @@ export default function Portfolio({ isActive }: PortfolioProps) {
 
   const projects = [
     {
-      id: 1,
-      title: 'Parking management system',
-      category: 'web development',
-      image: '/assets/images/project-1.png',
-      link: 'https://smartaipark.com/',
-      description: 'React development'
+       id: 1,
+      title: 'KwickLingo Chat widget',
+      category: 'Web development',
+      image: '/assets/images/project-8.png',
+      link: 'https://kwicklingo.com/',
+      description: 'Applications'
     },
+  
     {
       id: 2,
-      title: 'BuiAiSolution',
+      title: 'Visa4.com',
       category: 'web development',
-      image: '/assets/images/project-2.png',
-      link: 'https://buyaisolution.com/',
+      image: '/assets/images/project-11.png',
+      link: 'www.visa4.com',
       description: 'Mern stack development'
     },
-    {
+     {
       id: 3,
-      title: 'Restaurant Website',
+      title: 'Rakpolyplast.com',
       category: 'frontend development',
-      image: '/assets/images/project-3.png',
-      link: 'https://ajitkushawaha.github.io/eat-meet',
+      image: '/assets/images/rakpolyplast.png',
+      link: 'https://rakpolyplast.com/',
       description: 'Frontend Development'
     },
+  
     {
       id: 4,
       title: 'Portfolio Website',
@@ -58,14 +61,15 @@ export default function Portfolio({ isActive }: PortfolioProps) {
       link: 'https://pms.conceptserve.com/',
       description: 'React Native Application'
     },
-    {
+      {
       id: 6,
-      title: 'Rakpolyplast.com',
+      title: 'Restaurant Website',
       category: 'frontend development',
-      image: '/assets/images/rakpolyplast.png',
-      link: 'https://rakpolyplast.com/',
+      image: '/assets/images/project-3.png',
+      link: 'https://ajitkushawaha.github.io/eat-meet',
       description: 'Frontend Development'
     },
+   
     {
       id: 7,
       title: 'Facebook clone',
@@ -114,13 +118,13 @@ export default function Portfolio({ isActive }: PortfolioProps) {
       link: 'https://github.com/ajitkushawaha/BookingApp',
       description: 'Mern stack development'
     },
-    {
+     {
       id: 13,
-      title: 'KwickLingo Video Chat App',
-      category: 'applications',
-      image: '/assets/images/project-8.jpeg',
-      link: 'https://kwicklingo.com/',
-      description: 'Applications'
+      title: 'Parking management system',
+      category: 'web development',
+      image: '/assets/images/project-1.png',
+      link: '#',
+      description: 'React development'
     },
     {
       id: 14,
@@ -129,7 +133,15 @@ export default function Portfolio({ isActive }: PortfolioProps) {
       image: '/assets/images/cm.png',
       link: 'https://github.com/ajitkushawaha/contactManager',
       description: 'Mern stack development'
-    }
+    },
+      {
+      id: 15,
+      title: 'BuiAiSolution',
+      category: 'web development',
+      image: '/assets/images/project-2.png',
+      link: '#',
+      description: 'Mern stack development'
+    },
   ]
 
   const filteredProjects = activeFilter === 'all' 
@@ -169,10 +181,12 @@ export default function Portfolio({ isActive }: PortfolioProps) {
                   <div className="project-item-icon-box">
                     <Eye size={24} />
                   </div>
-                  <img 
+                  <Image 
                     src={project.image} 
                     alt={`Screenshot of ${project.title}`}
-                    loading="lazy" 
+                    width={800}
+                    height={600}
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   />
                 </figure>
 
