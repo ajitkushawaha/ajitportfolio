@@ -2,11 +2,11 @@ export default function Head() {
   return (
     <>
       {/* Primary Meta Tags */}
-      <title>Ajit Kushwaha (ajitReact) - React & MERN Stack Developer | Ahmedabad, India</title>
-      <meta name="title" content="Ajit Kushwaha (ajitReact) - React & MERN Stack Developer | Ahmedabad, India" />
-      <meta name="description" content="Ajit Kushwaha (ajitReact) is a passionate React and MERN Stack Developer based in Ahmedabad, India. Specializing in modern web applications, responsive design, and full-stack development. Visit ajitReact.in for professional web development services." />
-      <meta name="keywords" content="Ajit Kushwaha, ajitReact, ajitReact.in, React developer, MERN stack developer, JavaScript developer, Node.js developer, MongoDB developer, Express.js developer, web development, frontend developer, full-stack developer, Ahmedabad, India, portfolio, web applications, responsive design, UI/UX development, React.js developer, Next.js developer, TypeScript developer, web developer Ahmedabad, freelance web developer, custom web development, e-commerce development, mobile app development" />
-      <meta name="author" content="Ajit Kushwaha (ajitReact)" />
+      <title>Ajit Kushwaha – Co-Founder, Full-Stack Engineer building SaaS & AI Products</title>
+      <meta name="title" content="Ajit Kushwaha – Co-Founder, Full-Stack Engineer building SaaS & AI Products" />
+      <meta name="description" content="Ajit Kushwaha is a Co-Founder and Full-Stack Engineer specializing in building SaaS and AI products. Based in Ahmedabad, India, he is passionate about modern web applications and full-stack development." />
+      <meta name="keywords" content="Ajit Kushwaha, Full-Stack Engineer, SaaS, AI Products, web development, frontend development, backend development, Ahmedabad, India, portfolio, web applications" />
+      <meta name="author" content="Ajit Kushwaha" />
       <meta name="robots" content="index, follow" />
       <meta name="language" content="English" />
       <meta name="revisit-after" content="7 days" />
@@ -16,19 +16,19 @@ export default function Head() {
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://ajitReact.in/" />
-      <meta property="og:title" content="Ajit Kushwaha (ajitReact) - React & MERN Stack Developer | Ahmedabad, India" />
-      <meta property="og:description" content="Ajit Kushwaha (ajitReact) is a passionate React and MERN Stack Developer based in Ahmedabad, India. Specializing in modern web applications and full-stack development. Visit ajitReact.in for professional web development services." />
-      <meta property="og:image" content="https://ajitReact.in/assets/images/my-avatar.png" />
+      <meta property="og:url" content="https://ajitreact.site/" />
+      <meta property="og:title" content="Ajit Kushwaha – Co-Founder, Full-Stack Engineer building SaaS & AI Products" />
+      <meta property="og:description" content="Ajit Kushwaha is a Co-Founder and Full-Stack Engineer specializing in building SaaS and AI products. Based in Ahmedabad, India, he is passionate about modern web applications and full-stack development. Visit ajitreact.site for professional web development services." />
+      <meta property="og:image" content="https://ajitreact.site/assets/images/my-avatar.png" />
       <meta property="og:site_name" content="Ajit Kushwaha Portfolio - ajitReact" />
       <meta property="og:locale" content="en_US" />
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://ajitReact.in/" />
-      <meta property="twitter:title" content="Ajit Kushwaha (ajitReact) - React & MERN Stack Developer | Ahmedabad, India" />
-      <meta property="twitter:description" content="Ajit Kushwaha (ajitReact) is a passionate React and MERN Stack Developer based in Ahmedabad, India. Specializing in modern web applications and full-stack development." />
-      <meta property="twitter:image" content="https://ajitReact.in/assets/images/my-avatar.png" />
+      <meta property="twitter:url" content="https://ajitreact.site/" />
+      <meta property="twitter:title" content="Ajit Kushwaha – Co-Founder, Full-Stack Engineer building SaaS & AI Products" />
+      <meta property="twitter:description" content="Ajit Kushwaha is a Co-Founder and Full-Stack Engineer specializing in building SaaS and AI products. Based in Ahmedabad, India, he is passionate about modern web applications and full-stack development." />
+      <meta property="twitter:image" content="https://ajitreact.site/assets/images/my-avatar.png" />
       <meta property="twitter:creator" content="@ajitkushwaha" />
 
       {/* Additional SEO Meta Tags */}
@@ -37,11 +37,11 @@ export default function Head() {
       <meta name="yandex-verification" content="your-yandex-verification-code" />
 
       {/* Canonical URL */}
-      <link rel="canonical" href="https://ajitReact.in/" />
+      <link rel="canonical" href="https://ajitreact.site/" />
 
       {/* Alternate Languages */}
-      <link rel="alternate" href="https://ajitReact.in/" hrefLang="en" />
-      <link rel="alternate" href="https://ajitReact.in/" hrefLang="x-default" />
+      <link rel="alternate" href="https://ajitreact.site/" hrefLang="en" />
+      <link rel="alternate" href="https://ajitreact.site/" hrefLang="x-default" />
 
       {/* DNS Prefetch */}
       <link rel="dns-prefetch" href="//fonts.googleapis.com" />
@@ -94,9 +94,9 @@ export default function Head() {
       <meta property="business:contact_data:region" content="Gujarat" />
       <meta property="business:contact_data:postal_code" content="380000" />
       <meta property="business:contact_data:country_name" content="India" />
-      <meta property="business:contact_data:phone_number" content="+91-XXXXXXXXXX" />
-      <meta property="business:contact_data:email" content="contact@ajitReact.in" />
-      <meta property="business:contact_data:website" content="https://ajitReact.in" />
+      <meta property="business:contact_data:phone_number" content="+91-7617028576" />
+      <meta property="business:contact_data:email" content="ajit.kushwaha.work@gmail.com" />
+      <meta property="business:contact_data:website" content="https://ajitReact.site" />
 
       {/* Additional Keywords for Better SEO */}
       <meta name="keywords" content="Ajit Kushwaha portfolio, ajitReact developer, React developer Ahmedabad, MERN stack developer India, full stack developer Gujarat, web developer Ahmedabad, React.js expert, Node.js developer, MongoDB developer, Express.js developer, JavaScript developer, TypeScript developer, Next.js developer, frontend developer, backend developer, web application developer, e-commerce developer, mobile app developer, freelance developer, custom software development, responsive web design, modern web applications, progressive web apps, single page applications, REST API development, GraphQL development, database design, cloud deployment, AWS developer, Vercel deployment, GitHub portfolio, open source contributor, tech blogger, web development tutorials, React tutorials, JavaScript tutorials, coding tutorials, programming blog, developer blog, tech articles, web development articles, React articles, JavaScript articles, coding articles, programming articles, tech news, web development news, React news, JavaScript news, coding news, programming news, tech trends, web development trends, React trends, JavaScript trends, coding trends, programming trends" />

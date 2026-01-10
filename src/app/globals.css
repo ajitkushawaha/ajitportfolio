@@ -1011,8 +1011,8 @@ main {
 }
 
 .tier-price {
-  font-size: var(--fs-5);
-  font-weight: var(--fw-bold);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-normal);
   color: var(--primary-color);
 }
 
@@ -1027,8 +1027,8 @@ main {
   color: var(--primary-dark);
   padding: 4px 8px;
   border-radius: 12px;
-  font-size: var(--fs-7);
-  font-weight: var(--fw-medium);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-normal);
   border: 1px solid var(--primary-color);
 }
 
@@ -1040,7 +1040,7 @@ main {
 
 [data-theme="dark"] .service-features .feature-tag {
   background: rgba(100, 181, 246, 0.2);
-  color: var(--primary-color);
+  color: var (--text-primary);
   border: 1px solid rgba(100, 181, 246, 0.3);
 }
 
@@ -1067,7 +1067,7 @@ main {
   }
   
   .tier-price {
-    font-size: var(--fs-5);
+    font-size: var(--fs-6);
     line-height: 1.3;
   }
 }
@@ -2686,11 +2686,11 @@ body {
 
 .feature-tag {
   background: var(--bg-secondary);
-  color: var(--text-secondary);
+  color: var( --vegas-gold);
   padding: 4px 8px;
   border-radius: 12px;
-  font-size: var(--fs-7);
-  font-weight: var(--fw-medium);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-normal);
 }
 
 .shop-item-footer {
@@ -3007,7 +3007,7 @@ body {
   }
   
   .tier-price {
-    font-size: var(--fs-4);
+    font-size: var(--fs-6);
     line-height: 1.4;
   }
   

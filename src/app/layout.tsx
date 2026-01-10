@@ -74,15 +74,15 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://www.ajitreact.site',
-    title: 'Ajit Kushwaha (ajitReact) - React & MERN Stack Developer',
-    description: 'Ajit Kushwaha (ajitReact) is a passionate React and MERN Stack Developer based in Ahmedabad, India. Specializing in modern web applications and full-stack development. Visit www.ajitreact.site for professional web development services.',
+    title: 'Ajit Kushwaha – Co-Founder, Full-Stack Engineer building SaaS & AI Products',
+    description: 'Ajit Kushwaha is a Co-Founder and Full-Stack Engineer specializing in building SaaS and AI products. Based in Ahmedabad, India, he is passionate about modern web applications and full-stack development. Visit www.ajitreact.site for professional web development services.',
     siteName: 'Ajit Kushwaha Portfolio - ajitReact',
     images: [
       {
         url: '/assets/images/my-avatar.png',
         width: 1200,
         height: 630,
-        alt: 'Ajit Kushwaha (ajitReact) - React & MERN Stack Developer'
+        alt: 'Ajit Kushwaha – Co-Founder, Full-Stack Engineer building SaaS & AI Products'
       }
     ]
   },
@@ -109,6 +109,31 @@ export const metadata: Metadata = {
     'rating': 'General',
     'revisit-after': '7 days',
     'google-site-verification': 'YsjDL9H22Tg73GQCs3SPV8BCAwk8xMnZoNJaAoI66Yo',
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.ico/favicon.ico' },
+      { url: '/favicon.ico/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon.ico/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/favicon.ico/apple-icon.png' },
+      { url: '/favicon.ico/apple-icon-57x57.png', sizes: '57x57' },
+      { url: '/favicon.ico/apple-icon-60x60.png', sizes: '60x60' },
+      { url: '/favicon.ico/apple-icon-72x72.png', sizes: '72x72' },
+      { url: '/favicon.ico/apple-icon-76x76.png', sizes: '76x76' },
+      { url: '/favicon.ico/apple-icon-114x114.png', sizes: '114x114' },
+      { url: '/favicon.ico/apple-icon-120x120.png', sizes: '120x120' },
+      { url: '/favicon.ico/apple-icon-144x144.png', sizes: '144x144' },
+      { url: '/favicon.ico/apple-icon-152x152.png', sizes: '152x152' },
+      { url: '/favicon.ico/apple-icon-180x180.png', sizes: '180x180' },
+    ],
+    other: [
+      {
+        rel: 'android-icon-192x192',
+        url: '/favicon.ico/android-icon-192x192.png'
+      }
+    ]
   },
 }
 
@@ -145,8 +170,6 @@ export default function RootLayout({
             `
           }}
         /> */}
-        <link rel="shortcut icon" href="/assets/images/logo.ico" type="image/x-icon" />
-        <link rel="manifest" href="/manifest.json" />
       </head>
       <body>
         {children}

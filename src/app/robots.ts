@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/private/', '/admin/'],
     },
-    sitemap: 'https://ajitReact.in/sitemap.xml',
+    sitemap: 'https://ajitreact.site/sitemap.xml',
   }
 }

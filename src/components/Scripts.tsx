@@ -92,8 +92,8 @@ export default function Scripts() {
             "@type": "Person",
             "name": "Ajit Kushwaha",
             "alternateName": "ajitReact",
-            "url": "https://ajitReact.in",
-            "image": "https://ajitReact.in/assets/images/my-avatar.png",
+            "url": "https://ajitreact.site",
+            "image": "https://ajitreact.site/assets/images/my-avatar.png",
             "sameAs": [
               "https://github.com/ajitkushwaha",
               "https://linkedin.com/in/ajitkushwaha",
@@ -143,8 +143,8 @@ export default function Scripts() {
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "ajitReact",
-            "url": "https://ajitReact.in",
-            "logo": "https://ajitReact.in/assets/images/logo.svg",
+            "url": "https://ajitreact.site",
+            "logo": "https://ajitreact.site/assets/images/logo.svg",
             "description": "Professional web development services by Ajit Kushwaha. Specializing in React, MERN stack, and modern web applications.",
             "founder": {
               "@type": "Person",
@@ -159,7 +159,7 @@ export default function Scripts() {
             "contactPoint": {
               "@type": "ContactPoint",
               "contactType": "customer service",
-              "email": "contact@ajitReact.in"
+              "email": "contact@ajitreact.site"
             },
             "sameAs": [
               "https://github.com/ajitkushwaha",
@@ -177,7 +177,7 @@ export default function Scripts() {
             "@context": "https://schema.org",
             "@type": "WebSite",
             "name": "Ajit Kushwaha Portfolio - ajitReact",
-            "url": "https://ajitReact.in",
+            "url": "https://ajitreact.site",
             "description": "Professional portfolio of Ajit Kushwaha (ajitReact), React and MERN Stack Developer based in Ahmedabad, India.",
             "author": {
               "@type": "Person",
@@ -190,7 +190,7 @@ export default function Scripts() {
             },
             "potentialAction": {
               "@type": "SearchAction",
-              "target": "https://ajitReact.in/search?q={search_term_string}",
+              "target": "https://ajitreact.site/search?q={search_term_string}",
               "query-input": "required name=search_term_string"
             }
           })

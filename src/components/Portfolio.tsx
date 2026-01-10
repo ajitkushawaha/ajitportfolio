@@ -1,8 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import Image from 'next/image'
-import { Eye } from 'lucide-react'
+import ProjectList from './ProjectList'
 
 interface PortfolioProps {
   isActive: boolean
@@ -146,7 +145,7 @@ export default function Portfolio({ isActive }: PortfolioProps) {
 
   const filteredProjects = activeFilter === 'all' 
     ? projects 
-    : projects.filter(project => project.category === activeFilter)
+    : projects.filter(project => project.category.toLowerCase() === activeFilter.toLowerCase())
 
   return (
     <article className={`article portfolio ${isActive ? 'active' : ''}`} data-page="portfolio">
@@ -168,34 +167,7 @@ export default function Portfolio({ isActive }: PortfolioProps) {
           ))}
         </ul>
 
-        <ul className="project-list">
-          {filteredProjects.map((project) => (
-            <li 
-              key={project.id} 
-              className="project-item active" 
-              data-filter-item 
-              data-category={project.category}
-            >
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <figure className="project-img">
-                  <div className="project-item-icon-box">
-                    <Eye size={24} />
-                  </div>
-                  <Image 
-                    src={project.image} 
-                    alt={`Screenshot of ${project.title}`}
-                    width={800}
-                    height={600}
-                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                  />
-                </figure>
-
-                <h3 className="project-title">{project.title}</h3>
-                <p className="project-category">{project.description}</p>
-              </a>
-            </li>
-          ))}
-        </ul>
+        <ProjectList projects={filteredProjects} />
       </section>
     </article>
   )
