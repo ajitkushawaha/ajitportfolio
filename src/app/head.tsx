@@ -2,7 +2,7 @@ export default function Head() {
   return (
     <>
       {/* Primary Meta Tags */}
-      <title>Ajit Kushwaha – Co-Founder, Full-Stack Engineer building SaaS & AI Products</title>
+      <title>Ajit Kushwaha – Co-Founder of Codyn </title>
       <meta name="title" content="Ajit Kushwaha – Co-Founder, Full-Stack Engineer building SaaS & AI Products" />
       <meta name="description" content="Ajit Kushwaha is a Co-Founder and Full-Stack Engineer specializing in building SaaS and AI products. Based in Ahmedabad, India, he is passionate about modern web applications and full-stack development." />
       <meta name="keywords" content="Ajit Kushwaha, Full-Stack Engineer, SaaS, AI Products, web development, frontend development, backend development, Ahmedabad, India, portfolio, web applications" />

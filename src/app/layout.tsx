@@ -12,20 +12,41 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Ajit Kushwaha (ajitReact) - React & MERN Stack Developer | Ahmedabad, India',
+    default: 'Ajit Kushwaha – Co-Founder of Codyn',
     template: '%s | Ajit Kushwaha - ajitReact'
   },
-  description: 'Ajit Kushwaha (ajitReact) is a passionate React and MERN Stack Developer based in Ahmedabad, India. Specializing in modern web applications, responsive design, and full-stack development with 1+ years of experience. Visit www.ajitreact.site for professional web development services.',
+  description: 'Ajit Kushwaha is a Co-Founder and Full-Stack Engineer specializing in building SaaS and AI products. Based in Ahmedabad, India, he is passionate about modern web applications and full-stack development. Visit www.ajitreact.site for professional web development services.',
   keywords: [
     'Ajit Kushwaha',
     'ajitReact',
     'www.ajitreact.site',
+    'Co-Founder',
+    'Full-Stack Engineer',
+    'SaaS',
+    'AI Products',
     'React developer',
-    'MERN stack developer', 
+    'MERN stack developer',
     'JavaScript developer',
     'Node.js developer',
     'MongoDB developer',
     'Express.js developer',
+    'web development',
+    'frontend developer',
+    'full-stack developer',
+    'Ahmedabad',
+    'India',
+    'portfolio',
+    'web applications',
+    'responsive design',
+    'UI/UX development',
+    'React.js developer',
+    'Next.js developer',
+    'TypeScript developer',
+    'web developer Ahmedabad',
+    'freelance web developer',
+    'custom web development',
+    'e-commerce development',
+    'mobile app development',
     'web development',
     'frontend developer',
     'full-stack developer',
@@ -79,7 +100,7 @@ export const metadata: Metadata = {
     siteName: 'Ajit Kushwaha Portfolio - ajitReact',
     images: [
       {
-        url: '/assets/images/my-avatar.png',
+        url: '/icons/ajit.jpeg',
         width: 1200,
         height: 630,
         alt: 'Ajit Kushwaha – Co-Founder, Full-Stack Engineer building SaaS & AI Products'
@@ -90,7 +111,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Ajit Kushwaha (ajitReact) - React & MERN Stack Developer',
     description: 'Ajit Kushwaha (ajitReact) is a passionate React and MERN Stack Developer based in Ahmedabad, India. Specializing in modern web applications and full-stack development.',
-    images: ['/assets/images/my-avatar.png'],
+    images: ['/assets/images/android-chrome-192x192.png'],
     creator: '@ajitkushwaha', // Add your Twitter handle if you have one
   },
   other: {
@@ -112,29 +133,30 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon.ico/favicon.ico' },
-      { url: '/favicon.ico/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon.ico/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icons/favicon.ico' },
+      { url: '/icons/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/icons/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icons/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+      { url: '/icons/android-icon-192x192.png', sizes: '192x192', type: 'image/png' },
     ],
     apple: [
-      { url: '/favicon.ico/apple-icon.png' },
-      { url: '/favicon.ico/apple-icon-57x57.png', sizes: '57x57' },
-      { url: '/favicon.ico/apple-icon-60x60.png', sizes: '60x60' },
-      { url: '/favicon.ico/apple-icon-72x72.png', sizes: '72x72' },
-      { url: '/favicon.ico/apple-icon-76x76.png', sizes: '76x76' },
-      { url: '/favicon.ico/apple-icon-114x114.png', sizes: '114x114' },
-      { url: '/favicon.ico/apple-icon-120x120.png', sizes: '120x120' },
-      { url: '/favicon.ico/apple-icon-144x144.png', sizes: '144x144' },
-      { url: '/favicon.ico/apple-icon-152x152.png', sizes: '152x152' },
-      { url: '/favicon.ico/apple-icon-180x180.png', sizes: '180x180' },
+      { url: '/icons/apple-icon.png' },
+      { url: '/icons/apple-icon-57x57.png', sizes: '57x57' },
+      { url: '/icons/apple-icon-60x60.png', sizes: '60x60' },
+      { url: '/icons/apple-icon-72x72.png', sizes: '72x72' },
+      { url: '/icons/apple-icon-76x76.png', sizes: '76x76' },
+      { url: '/icons/apple-icon-114x114.png', sizes: '114x114' },
+      { url: '/icons/apple-icon-120x120.png', sizes: '120x120' },
+      { url: 'icons/apple-icon-144x144.png', sizes: '144x144' },
+      { url: '/icons/apple-icon-152x152.png', sizes: '152x152' },
+      { url: '/icons/apple-icon-180x180.png', sizes: '180x180' },
     ],
     other: [
-      {
-        rel: 'android-icon-192x192',
-        url: '/favicon.ico/android-icon-192x192.png'
-      }
-    ]
+      { rel: 'apple-touch-icon-precomposed', url: '/icons/apple-icon-precomposed.png' },
+      { rel: 'msapplication-TileImage', url: '/icons/ms-icon-144x144.png' },
+    ],
   },
+  manifest: '/manifest.json',
 }
 
 export default function RootLayout({
