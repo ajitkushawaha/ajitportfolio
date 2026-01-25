@@ -22,7 +22,7 @@ export default function Sidebar() {
       <div className="sidebar-info">
         <figure className="avatar-box">
           <Image 
-            src="https://media.licdn.com/dms/image/v2/D4D03AQFM_v20Uk_HZQ/profile-displayphoto-scale_400_400/B4DZrrtTPaGwAg-/0/1764891116036?e=1769040000&v=beta&t=WHGhgpJOwRzZik6At2Zo9uaQeV93eiMT4UqU_ywZVdE"
+            src="/icons/ajit.jpeg"
             alt="Ajit Kushwaha - React and MERN Stack Developer" 
             width={80}
             height={80}
@@ -31,7 +31,7 @@ export default function Sidebar() {
 
         <div className="info-content">
           <h1 className="name" title="Ajit Kushwaha">Ajit Kushwaha</h1>
-          <p className="title">React  Developer</p>
+          <p className="title ">Software Engineer</p>
         </div>
 
         <button 

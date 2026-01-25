@@ -6,6 +6,15 @@ async function getBlogPosts(): Promise<BlogPost[]> {
   // This data is now fetched/defined on the server
   return [
     {
+      id: 5,
+      title: 'Best Chat Widget(#Kwickingo) for Websites in 2025',
+      category: 'Blog',
+      date: 'Jan 20, 2025',
+      image: 'https://www.kwicklingo.com/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1551434678-e076c223a692%3Fw%3D1200%26h%3D600%26fit%3Dcrop&w=3840&q=75',
+      link: 'https://www.kwicklingo.com/blog/best-chat-widget-2025',
+      description: 'Discover the best chat widgets(Kwickingo) to enhance customer engagement and support experience in 2025.'
+    },
+    {
       id: 1,
       title: 'Research Paper in React',
       category: 'Research',
