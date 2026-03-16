@@ -19,6 +19,24 @@ export default function AboutContent() {
           maintainability, and building products that can actually survive in the market.
         </p>
       </section>
+      <section className="about-stats">
+        <div className="stats-item">
+          <h3 className="stat-number">3+</h3>
+          <p className="stat-text">Years Exp.</p>
+        </div>
+        <div className="stats-item">
+          <h3 className="stat-number">25+</h3>
+          <p className="stat-text">Projects</p>
+        </div>
+        <div className="stats-item">
+          <h3 className="stat-number">12+</h3>
+          <p className="stat-text">Professional</p>
+        </div>
+        <div className="stats-item">
+          <h3 className="stat-number">5+</h3>
+          <p className="stat-text">SaaS Built</p>
+        </div>
+      </section>
 
 
       {/* Service */}
@@ -32,25 +50,18 @@ export default function AboutContent() {
             </div>
 
             <div className="service-content-box">
-              <h4 className="h4 service-item-title">Web Applications</h4>
+              <h4 className="h4 service-item-title">
+                Web Applications
+                <span className="status-badge available">Available</span>
+              </h4>
               <p className="service-item-text">
                 Full-stack web applications with modern technologies like React, Node.js, and databases.
                 Custom solutions for businesses with user authentication, real-time features, and API integration.
               </p>
               <div className="service-pricing">
-                <div className="pricing-tiers">
-                  <div className="pricing-tier">
-                    <span className="tier-name">Basic</span>
-                    <span className="tier-price">₹15,000 - ₹40,000</span>
-                  </div>
-                  <div className="pricing-tier">
-                    <span className="tier-name">Standard</span>
-                    <span className="tier-price">₹40,000 - ₹1,20,000</span>
-                  </div>
-                  <div className="pricing-tier">
-                    <span className="tier-name">Premium</span>
-                    <span className="tier-price">₹1,20,000 - ₹4,00,000+</span>
-                  </div>
+                <div className="pricing-range">
+                  <span className="price-label">Project Range:</span>
+                  <span className="price-value">₹15,000 - ₹4,00,000+</span>
                 </div>
                 <div className="service-features">
                   <span className="feature-tag">Custom Design</span>
@@ -68,25 +79,18 @@ export default function AboutContent() {
             </div>
 
             <div className="service-content-box">
-              <h4 className="h4 service-item-title">Static Websites</h4>
+              <h4 className="h4 service-item-title">
+                Static Websites
+                <span className="status-badge available">Available</span>
+              </h4>
               <p className="service-item-text">
                 Fast, responsive static websites built with modern frameworks.
                 Perfect for portfolios, business sites, and landing pages with SEO optimization.
               </p>
               <div className="service-pricing">
-                <div className="pricing-tiers">
-                  <div className="pricing-tier">
-                    <span className="tier-name">Basic</span>
-                    <span className="tier-price">₹4,000 - ₹12,000</span>
-                  </div>
-                  <div className="pricing-tier">
-                    <span className="tier-name">Standard</span>
-                    <span className="tier-price">₹12,000 - ₹25,000</span>
-                  </div>
-                  <div className="pricing-tier">
-                    <span className="tier-name">Premium</span>
-                    <span className="tier-price">₹25,000 - ₹65,000+</span>
-                  </div>
+                <div className="pricing-range">
+                  <span className="price-label">Project Range:</span>
+                  <span className="price-value">₹4,000 - ₹65,000+</span>
                 </div>
                 <div className="service-features">
                   <span className="feature-tag">Responsive Design</span>
@@ -104,25 +108,18 @@ export default function AboutContent() {
             </div>
 
             <div className="service-content-box">
-              <h4 className="h4 service-item-title">Mobile Apps</h4>
+              <h4 className="h4 service-item-title">
+                Mobile Apps
+                <span className="status-badge busy">Busy</span>
+              </h4>
               <p className="service-item-text">
                 Cross-platform mobile applications using React Native and Flutter.
                 Native performance with beautiful UI/UX design for iOS and Android.
               </p>
               <div className="service-pricing">
-                <div className="pricing-tiers">
-                  <div className="pricing-tier">
-                    <span className="tier-name">Basic</span>
-                    <span className="tier-price">₹8,000 - ₹25,000</span>
-                  </div>
-                  <div className="pricing-tier">
-                    <span className="tier-name">Standard</span>
-                    <span className="tier-price">₹25,000 - ₹60,000</span>
-                  </div>
-                  <div className="pricing-tier">
-                    <span className="tier-name">Premium</span>
-                    <span className="tier-price">₹60,000 - ₹1,50,000+</span>
-                  </div>
+                <div className="pricing-range">
+                  <span className="price-label">Project Range:</span>
+                  <span className="price-value">₹8,000 - ₹2,50,000+</span>
                 </div>
                 <div className="service-features">
                   <span className="feature-tag">Cross-platform</span>
@@ -140,25 +137,18 @@ export default function AboutContent() {
             </div>
 
             <div className="service-content-box">
-              <h4 className="h4 service-item-title">Shopify Development</h4>
+              <h4 className="h4 service-item-title">
+                Shopify Development
+                <span className="status-badge available">Available</span>
+              </h4>
               <p className="service-item-text">
                 Complete Shopify store setup, theme customization, and app development.
                 E-commerce solutions with payment integration and inventory management.
               </p>
               <div className="service-pricing">
-                <div className="pricing-tiers">
-                  <div className="pricing-tier">
-                    <span className="tier-name">Basic</span>
-                    <span className="tier-price">₹12,000 - ₹25,000</span>
-                  </div>
-                  <div className="pricing-tier">
-                    <span className="tier-name">Standard</span>
-                    <span className="tier-price">₹25,000 - ₹65,000</span>
-                  </div>
-                  <div className="pricing-tier">
-                    <span className="tier-name">Premium</span>
-                    <span className="tier-price">₹65,000 - ₹2,00,000+</span>
-                  </div>
+                <div className="pricing-range">
+                  <span className="price-label">Project Range:</span>
+                  <span className="price-value">₹12,000 - ₹2,00,000+</span>
                 </div>
                 <div className="service-features">
                   <span className="feature-tag">Custom Theme</span>
@@ -176,25 +166,18 @@ export default function AboutContent() {
             </div>
 
             <div className="service-content-box">
-              <h4 className="h4 service-item-title">Chat Agents</h4>
+              <h4 className="h4 service-item-title">
+                Chat Agents
+                <span className="status-badge available">Available</span>
+              </h4>
               <p className="service-item-text">
                 AI-powered chatbots and customer support agents.
                 24/7 automated customer service with natural language processing and analytics.
               </p>
               <div className="service-pricing">
-                <div className="pricing-tiers">
-                  <div className="pricing-tier">
-                    <span className="tier-name">Basic</span>
-                    <span className="tier-price">₹6,000 - ₹15,000</span>
-                  </div>
-                  <div className="pricing-tier">
-                    <span className="tier-name">Standard</span>
-                    <span className="tier-price">₹15,000 - ₹40,000</span>
-                  </div>
-                  <div className="pricing-tier">
-                    <span className="tier-name">Premium</span>
-                    <span className="tier-price">₹40,000 - ₹1,20,000+</span>
-                  </div>
+                <div className="pricing-range">
+                  <span className="price-label">Project Range:</span>
+                  <span className="price-value">₹6,000 - ₹1,20,000+</span>
                 </div>
                 <div className="service-features">
                   <span className="feature-tag">AI Integration</span>
@@ -212,11 +195,26 @@ export default function AboutContent() {
             </div>
 
             <div className="service-content-box">
-              <h4 className="h4 service-item-title">UI/UX Design</h4>
+              <h4 className="h4 service-item-title">
+                UI/UX Design
+                <span className="status-badge available">Available</span>
+              </h4>
               <p className="service-item-text">
                 User-centered design solutions with wireframes, prototypes, and user testing.
                 Creating intuitive and engaging user experiences for web and mobile applications.
               </p>
+              <div className="service-pricing">
+                <div className="pricing-range">
+                  <span className="price-label">Project Range:</span>
+                  <span className="price-value">₹6,000 - ₹80,000+</span>
+                </div>
+                <div className="service-features">
+                  <span className="feature-tag">Wireframing</span>
+                  <span className="feature-tag">Prototyping</span>
+                  <span className="feature-tag">User Testing</span>
+                  <span className="feature-tag">Visual Design</span>
+                </div>
+              </div>
             </div>
           </li>
         </ul>

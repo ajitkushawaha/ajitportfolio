@@ -12,134 +12,236 @@ export default function Portfolio({ isActive }: PortfolioProps) {
 
   const filters = [
     { id: 'all', label: 'All' },
-    { id: 'frontend development', label: 'Frontend Development' },
-    { id: 'applications', label: 'Applications' },
-    { id: 'web development', label: 'Web development' }
+    { id: 'saas', label: 'SaaS' },
+    { id: 'professional', label: 'Professional' },
+    { id: 'ventures', label: 'Ventures' },
+    { id: 'labs', label: 'Labs' }
   ]
 
   const projects = [
+    // SaaS
     {
-       id: 1,
+      id: 1,
       title: 'KwickLingo Chat widget',
-      category: 'Web development',
+      category: 'saas',
       image: '/assets/images/project-8.png',
       link: 'https://kwicklingo.com/',
-      description: 'Applications'
-    },
-  
-    {
-      id: 2,
-      title: 'Visa4.com',
-      category: 'web development',
-      image: '/assets/images/project-11.png',
-      link: 'www.visa4.com',
-      description: 'Mern stack development'
+      description: 'AI-powered Chat Widget'
     },
      {
-      id: 3,
-      title: 'Rakpolyplast.com',
-      category: 'frontend development',
-      image: '/assets/images/rakpolyplast.png',
-      link: 'https://rakpolyplast.com/',
-      description: 'Frontend Development'
-    },
-  
-    {
       id: 4,
-      title: 'Portfolio Website',
-      category: 'frontend development',
-      image: '/assets/images/portfolio.png',
-      link: 'https://ajitkushawaha.github.io',
-      description: 'Frontend Development'
+      title: 'Manage MyCafe',
+      category: 'saas',
+      image: '/assets/images/managemycafe.png',
+      link: 'https://managemy.cafe',
+      description: 'Cafe Management System'
     },
     {
-      id: 5,
+      id: 2,
+      title: 'Parking management system',
+      category: 'saas',
+      image: '/assets/images/project-1.png',
+      link: '#',
+      description: 'Smart Parking Solution'
+    },
+    {
+      id: 3,
       title: 'Parking Management App',
-      category: 'applications',
+      category: 'saas',
       image: '/assets/images/PmsMobile.jpg',
       link: 'https://pms.conceptserve.com/',
-      description: 'React Native Application'
-    },
-      {
-      id: 6,
-      title: 'Restaurant Website',
-      category: 'frontend development',
-      image: '/assets/images/project-3.png',
-      link: 'https://ajitkushawaha.github.io/eat-meet',
-      description: 'Frontend Development'
+      description: 'Mobile Parking Control'
     },
    
     {
+      id: 5,
+      title: 'BuiAiSolution',
+      category: 'saas',
+      image: '/assets/images/project-2.png',
+      link: '#',
+      description: 'AI Infrastructure Solutions'
+    },
+
+    // Client
+    {
+      id: 6,
+      title: 'Visa4.com',
+      category: 'professional',
+      image: '/assets/images/visa4.png',
+      link: 'https://www.visa4.com',
+      description: 'Visa Consultancy Platform'
+    },
+    {
       id: 7,
-      title: 'Facebook clone',
-      category: 'frontend development',
-      image: '/assets/images/project-5.png',
-      link: 'https://ajitkushawaha.github.io/facebook-clone/',
-      description: 'Frontend Development'
+      title: 'Growingwing',
+      category: 'professional',
+      image: '/assets/images/growingwing.png',
+      link: '#',
+      description: 'Educational Platform'
     },
     {
       id: 8,
-      title: 'Adventure and Tourism Website Design',
-      category: 'frontend development',
-      image: '/assets/images/natureWeb.png',
-      link: 'https://ajitkushawaha.github.io/nature/',
-      description: 'Frontend Development'
+      title: 'LucaBoat',
+      category: 'professional',
+      image: '/assets/images/LucaBoat.png',
+      link: '#',
+      description: 'Boat Rental Service'
     },
     {
       id: 9,
-      title: 'Incredible Man',
-      category: 'frontend development',
-      image: '/assets/images/project-6.png',
-      link: 'https://ajitkushawaha.github.io/incredible-Man/',
-      description: 'Frontend Development'
+      title: 'Lms',
+      category: 'professional',
+      image: '/assets/images/project-5.png',
+      link: '#',
+      description: 'Learning Management System'
     },
     {
       id: 10,
-      title: 'YouTube Clone',
-      category: 'frontend development',
-      image: '/assets/images/yt.png',
-      link: 'https://github.com/ajitkushawaha/Youtube',
-      description: 'Frontend Development'
+      title: 'Gect Ngo',
+      category: 'professional',
+      image: '/assets/images/gectngo.png',
+      link: '#',
+      description: 'NGO Website'
     },
     {
       id: 11,
-      title: 'Airbnb',
-      category: 'frontend development',
-      image: '/assets/images/airbnb.png',
-      link: 'https://github.com/ajitkushawaha/Airbnbs',
-      description: 'Frontend Development'
+      title: 'Rakpolyplast',
+      category: 'professional',
+      image: '/assets/images/rakpolyplast.png',
+      link: 'https://rakpolyplast.com/',
+      description: 'Industrial Manufacturer'
     },
     {
       id: 12,
-      title: 'Hotel Mansarover',
-      category: 'web development',
-      image: '/assets/images/project-7.png',
-      link: 'https://github.com/ajitkushawaha/BookingApp',
-      description: 'Mern stack development'
+      title: 'Incredible Man',
+      category: 'professional',
+      image: '/assets/images/im.png',
+      link: 'https://ajitkushawaha.github.io/incredible-Man/',
+      description: 'Grooming Products store'
     },
-     {
+    {
       id: 13,
-      title: 'Parking management system',
-      category: 'web development',
-      image: '/assets/images/project-1.png',
-      link: '#',
-      description: 'React development'
+      title: 'Visal',
+      category: 'professional',
+      image: '/assets/images/visal.png',
+      link: 'https://vfms.co.in/',
+      description: 'Vehicle Management System'
     },
     {
       id: 14,
+      title: 'Mister Bouton',
+      category: 'professional',
+      image: '/assets/images/misterbouton.png',
+      link: 'https://www.misterbouton.com/',
+      description: 'Fashion E-commerce'
+    },
+    {
+      id: 15,
+      title: 'Blue City Real Estate',
+      category: 'professional',
+      image: '/assets/images/bluecity.png',
+      link: 'https://bluecityrealestate.com/',
+      description: 'Real Estate Platform'
+    },
+    {
+      id: 16,
+      title: 'London Crust',
+      category: 'professional',
+      image: '/assets/images/londan.png',
+      link: 'https://londoncrust.vercel.app/',
+      description: 'Bakery & Restaurant'
+    },
+
+    // MyProduct
+    {
+      id: 17,
+      title: 'kwicklingo.com',
+      category: 'ventures',
+      image: '/assets/images/project-8.png',
+      link: 'https://kwicklingo.com',
+      description: 'AI Chatbot Product'
+    },
+    {
+      id: 18,
+      title: 'managemy.cafe',
+      category: 'ventures',
+      image: '/assets/images/managemycafe.png',
+      link: 'https://managemy.cafe',
+      description: 'Cafe POS System'
+    },
+
+    // College
+    {
+      id: 19,
+      title: 'Village Fress',
+      category: 'labs',
+      image: '/assets/images/Village.png',
+      link: 'https://villagefress.vercel.app/',
+      description: 'Fresh Produce Platform'
+    },
+    {
+      id: 20,
+      title: 'YouTube Clone',
+      category: 'labs',
+      image: '/assets/images/yt.png',
+      link: 'https://github.com/ajitkushawaha/Youtube',
+      description: 'Video Streaming UI'
+    },
+    {
+      id: 21,
+      title: 'Airbnb Clone',
+      category: 'labs',
+      image: '/assets/images/airbnb.png',
+      link: 'https://github.com/ajitkushawaha/Airbnbs',
+      description: 'Vacation Rental UI'
+    },
+    {
+      id: 22,
+      title: 'Facebook Clone',
+      category: 'labs',
+      image: '/assets/images/project-5.png',
+      link: 'https://ajitkushawaha.github.io/facebook-clone/',
+      description: 'Social Media Clone'
+    },
+    {
+      id: 23,
       title: 'Contact Manager',
-      category: 'web development',
+      category: 'labs',
       image: '/assets/images/cm.png',
       link: 'https://github.com/ajitkushawaha/contactManager',
-      description: 'Mern stack development'
+      description: 'MERN Contact App'
     },
-      {
-      id: 15,
-      title: 'BuiAiSolution',
-      category: 'web development',
-      image: '/assets/images/project-2.png',
-      link: '#',
-      description: 'Mern stack development'
+    {
+      id: 24,
+      title: 'Restaurant Website',
+      category: 'labs',
+      image: '/assets/images/project-3.png',
+      link: 'https://ajitkushawaha.github.io/eat-meet',
+      description: 'React Food App'
+    },
+    {
+      id: 25,
+      title: 'Adventure Site',
+      category: 'labs',
+      image: '/assets/images/natureWeb.png',
+      link: 'https://ajitkushawaha.github.io/nature/',
+      description: 'Nature Exploration UI'
+    },
+    {
+      id: 26,
+      title: 'Portfolio Website',
+      category: 'labs',
+      image: '/assets/images/portfolio.png',
+      link: 'https://ajitkushawaha.github.io',
+      description: 'Static Portfolio Site'
+    },
+    {
+      id: 27,
+      title: 'MeowParivar',
+      category: 'professional',
+      image: '/assets/images/meowparivar.png',
+      link: 'https://www.meowprivar.in',
+      description: 'E-commerce for Pets'
     },
   ]
 

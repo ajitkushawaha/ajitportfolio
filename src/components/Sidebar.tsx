@@ -31,7 +31,10 @@ export default function Sidebar() {
 
         <div className="info-content">
           <h1 className="name" title="Ajit Kushwaha">Ajit Kushwaha</h1>
-          <p className="title ">Software Engineer</p>
+          <div className="status-container">
+            <p className="title">Software Engineer</p>
+            <span className="status-badge available">Available</span>
+          </div>
         </div>
 
         <button 
