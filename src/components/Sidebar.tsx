@@ -15,7 +15,7 @@ import {
 } from 'lucide-react'
 
 export default function Sidebar() {
-  const [showContacts, setShowContacts] = useState(true)
+  const [showContacts, setShowContacts] = useState(false)
 
   return (
     <aside className={`sidebar ${showContacts ? 'active' : ''}`}>
@@ -42,7 +42,9 @@ export default function Sidebar() {
           onClick={() => setShowContacts(!showContacts)}
         >
           <span>{showContacts ? 'Hide Contacts' : 'Show Contacts'}</span>
-          <ChevronDown size={16} />
+          <div className="icon-box-mobile">
+            <ChevronDown size={16} />
+          </div>
         </button>
       </div>
 
