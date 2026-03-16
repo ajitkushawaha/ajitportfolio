@@ -6,17 +6,20 @@ export default function AboutContent() {
     <>
       <section className="about-text">
         <p>
-          I’m a Co-Founder and Product-focused Full-Stack Engineer based in Ahmedabad, India.
-          I design, build, and scale real-world SaaS products with a strong focus on performance,
-          cost efficiency, and user experience.
+          I’m a Co-Founder and product-focused Full-Stack Engineer based in Ahmedabad, India. I specialize in building real-world SaaS products and scalable web applications.
+        </p>
+        <p>
+          My work focuses on turning ideas into functional products — from designing frontend systems with React and React Native to building backend APIs, databases, and cloud infrastructure.
+        </p>
+        <p>
+          I’ve worked on platforms such as community systems, SaaS dashboards, and digital ordering products, where the goal is not just writing code but creating solutions that are reliable, fast, and practical for real users.
+        </p>
+        <p>
+          I’m particularly interested in modern product development using AI-assisted workflows, efficient system architecture, and lean development strategies that help teams launch products quickly without unnecessary complexity.
         </p>
 
         <p>
-          My work goes beyond writing code — I solve business problems through technology.
-          From architecting scalable frontend systems to building backend APIs and optimizing AI
-          infrastructure using techniques like RAG and indexed search, I focus on delivering
-          practical, production-ready solutions. I care deeply about clean architecture,
-          maintainability, and building products that can actually survive in the market.
+          I care deeply about clean architecture, maintainable systems, and building products that can actually survive and evolve in the real market.
         </p>
       </section>
       <section className="about-stats">

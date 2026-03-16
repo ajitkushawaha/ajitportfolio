@@ -22,21 +22,21 @@ export default function About({ isActive, onTestimonialClick }: AboutProps) {
       name: "Kanav Kohli",
       role: "Freelancer",
       avatar: "/assets/images/avatar-1.png",
-      text: "Ajit was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcorper nulla non metus auctor fringilla. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent blandit laoreet nibh.",
+      text: "Ajit is a highly skilled developer who truly understands business logic. He helped us architect a complex SaaS dashboard that significantly improved our team's workflow. His attention to detail in system performance and user experience is exceptional. Highly recommended for any serious product development.",
       date: "2025"
     },
     {
       name: "Saurabh",
       role: "React Developer",
       avatar: "/assets/images/avatar-4.png",
-      text: "Ajit was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcorper nulla non metus auctor fringilla. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent blandit laoreet nibh.",
+      text: "Working with Ajit on our AI integration project was a great experience. He implemented a RAG-based search system that works flawlessly. His deep knowledge of React and Node.js combined with his focus on clean, maintainable code makes him a top-tier engineer. A reliable partner for technical challenges.",
       date: "2024"
     },
     {
       name: 'Arpan Shah',
       role: "Full Stack Developer",
       avatar: "/assets/images/avatar-4.png",
-      text: "Ajit was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcorper nulla non metus auctor fringilla. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent blandit laoreet nibh.",
+      text: "Ajit delivered our cross-platform mobile app ahead of schedule. The UI is smooth, and the backend is robust. What sets him apart is his ability to think like a product owner—he often suggested features that we hadn't even considered. Excellent communication and professional delivery.",
       date: "2023"
     },
 
