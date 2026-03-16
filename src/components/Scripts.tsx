@@ -42,8 +42,8 @@ export default function Scripts() {
 
     window.addEventListener('storage', handleStorageChange);
 
-    // Service Worker registration
-    if ("serviceWorker" in navigator) {
+    // Service Worker registration - only in production to avoid dev caching issues
+    if ("serviceWorker" in navigator && process.env.NODE_ENV === 'production') {
       navigator.serviceWorker
         .register("/service-worker.js")
         .then(() => console.log("Service Worker Registered"))
