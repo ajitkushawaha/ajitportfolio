@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import './globals.css'
 import Scripts from '@/components/Scripts'
+import SmoothScroll from '@/components/SmoothScroll'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -194,6 +195,7 @@ export default function RootLayout({
         /> */}
       </head>
       <body>
+        <SmoothScroll />
         {children}
         <Scripts />
       </body>

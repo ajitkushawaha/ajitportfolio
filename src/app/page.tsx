@@ -82,33 +82,6 @@ const skills = [
 export default function AjitKushwahaVanillaStyle() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
-  useEffect(() => {
-    let lenis: any = null
-    let rafId: number | null = null
-    const script = document.createElement('script')
-    script.src = 'https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.36/dist/lenis.min.js'
-    script.onload = () => {
-      const LenisClass = (window as any).Lenis
-      if (!LenisClass) return
-      lenis = new LenisClass({
-        duration: 1.2,
-        easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-        smoothWheel: true,
-      })
-      const raf = (time: number) => {
-        lenis.raf(time)
-        rafId = requestAnimationFrame(raf)
-      }
-      rafId = requestAnimationFrame(raf)
-    }
-    document.body.appendChild(script)
-
-    return () => {
-      if (lenis) lenis.destroy()
-      if (rafId !== null) cancelAnimationFrame(rafId)
-      if (script.parentNode) script.parentNode.removeChild(script)
-    }
-  }, [])
 
   useEffect(() => {
     // Reveal on scroll logic
