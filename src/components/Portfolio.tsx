@@ -89,11 +89,11 @@ export default function Portfolio({ isActive }: PortfolioProps) {
     },
     {
       id: 9,
-      title: 'Lms',
+      title: 'Workforce LMS',
       category: 'professional',
-      image: '/assets/images/project-5.png',
-      link: '#',
-      description: 'Learning Management System'
+      image: '/assets/images/image.png',
+      link: 'https://play.google.com/store/apps/details?id=com.anonymous.workforcelms&hl=en_IN',
+      description: 'Workforce Management System'
     },
     {
       id: 10,
@@ -161,14 +161,7 @@ export default function Portfolio({ isActive }: PortfolioProps) {
       link: 'https://kwicklingo.com',
       description: 'AI Chatbot Product'
     },
-    {
-      id: 18,
-      title: 'managemy.cafe',
-      category: 'ventures',
-      image: '/assets/images/managemycafe.png',
-      link: 'https://managemy.cafe',
-      description: 'Cafe POS System'
-    },
+   
 
     // College
     {

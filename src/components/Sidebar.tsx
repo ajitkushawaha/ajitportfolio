@@ -102,7 +102,7 @@ export default function Sidebar() {
         <ul className="social-list">
           <li className="social-item">
             <a 
-              href="https://www.linkedin.com/in/ajju-kushwaha77/" 
+              href="https://www.linkedin.com/in/ajitreact/" 
               className="social-link"
               target="_blank"
               rel="noopener noreferrer"

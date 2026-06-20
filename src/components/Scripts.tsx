@@ -96,7 +96,7 @@ export default function Scripts() {
             "image": "https://ajitreact.site/assets/images/my-avatar.png",
             "sameAs": [
               "https://github.com/ajitkushwaha",
-              "https://linkedin.com/in/ajitkushwaha",
+              "https://www.linkedin.com/in/ajitreact",
               "https://twitter.com/ajitkushwaha"
             ],
             "jobTitle": "React & MERN Stack Developer",
@@ -163,7 +163,7 @@ export default function Scripts() {
             },
             "sameAs": [
               "https://github.com/ajitkushwaha",
-              "https://linkedin.com/in/ajitkushwaha"
+              "https://www.linkedin.com/in/ajitreact"
             ]
           })
         }}
