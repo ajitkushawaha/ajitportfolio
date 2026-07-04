@@ -35,19 +35,19 @@ const featuredProjects = [
   },
   {
     id: 'PRJ — 04',
-    category: 'Consultancy Platform',
+    category: 'Visa Booking & Consultancy',
     title: 'Visa4.com',
-    description: 'High-performance consultant portal streamlining applicant profiling, document submittals, and visa workflow tracking.',
+    description: 'A comprehensive visa booking and consultancy platform with a high-performance portal streamlining applicant profiling, document submittals, and workflow tracking.',
     stack: ['Next.js', 'PostgreSQL', 'Figma', 'API integration'],
     link: 'https://www.visa4.com',
     image: '/assets/images/visa4.png'
   },
   {
     id: 'PRJ — 05',
-    category: 'SaaS / AI Tech',
-    title: 'BuiAiSolution',
-    description: 'Custom AI infrastructure platform for businesses requiring automated document processing.',
-    stack: ['Next.js', 'Python', 'FastAPI', 'PostgreSQL'],
+    category: 'SaaS / Education',
+    title: 'Next Level Education',
+    description: 'An interactive online learning and educational platform featuring personalized student dashboards, course management, and progress tracking.',
+    stack: ['Next.js', 'TypeScript', 'Node.js', 'MongoDB'],
     link: '#',
     image: '/assets/images/project-3.png'
   }
@@ -1238,7 +1238,7 @@ export default function AjitKushwahaVanillaStyle() {
         /* ── Fanned Documents Projects Section ── */
         .documents-container {
           width: 100%;
-          overflow: hidden;
+          overflow: visible;
           padding: 40px 0 80px 0;
           position: relative;
         }

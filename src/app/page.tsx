@@ -13,7 +13,7 @@ const featuredProjects = [
     description: 'My independently built AI support SaaS product, taken from product strategy and architecture through production deployment.',
     stack: ['Next.js', 'TypeScript', 'Node.js', 'MongoDB'],
     link: 'https://kwicklingo.com/',
-    image: '/assets/images/project-1.png'
+    image: '/assets/images/project-8.png'
   },
   {
     id: 'PRJ — 02',
@@ -22,7 +22,7 @@ const featuredProjects = [
     description: 'My restaurant SaaS product for digital QR menus and online ordering, built across product UX, full-stack engineering, and deployment.',
     stack: ['React', 'Express', 'MongoDB', 'Node.js'],
     link: 'https://managemy.cafe',
-    image: '/assets/images/managemycafe.png'
+    image: '/assets/images/mmc.png'
   },
   {
     id: 'PRJ — 03',
@@ -31,25 +31,25 @@ const featuredProjects = [
     description: 'Workforce LMS is a mobile application for the workforce management system.',
     stack: ['React Native', 'TypeScript', 'Node.js', 'Redux'],
     link: 'https://play.google.com/store/apps/details?id=com.anonymous.workforcelms&hl=en_IN',
-    image: '/assets/images/PmsMobile.jpg'
+    image: '/assets/images/lms.png'
   },
   {
     id: 'PRJ — 04',
-    category: 'Consultancy Platform',
+    category: 'Visa Booking & Consultancy',
     title: 'Visa4.com',
-    description: 'High-performance consultant portal streamlining applicant profiling, document submittals, and visa workflow tracking.',
+    description: 'A comprehensive visa booking and consultancy platform with a high-performance portal streamlining applicant profiling, document submittals, and workflow tracking.',
     stack: ['Next.js', 'PostgreSQL', 'Figma', 'API integration'],
     link: 'https://www.visa4.com',
     image: '/assets/images/visa4.png'
   },
   {
     id: 'PRJ — 05',
-    category: 'SaaS / AI Tech',
-    title: 'BuiAiSolution',
-    description: 'Custom AI infrastructure platform for businesses requiring automated document processing.',
-    stack: ['Next.js', 'Python', 'FastAPI', 'PostgreSQL'],
+    category: 'Consultancy / Education',
+    title: 'Next Level Education',
+    description: 'A full-stack education consultancy platform with a scalable CMS for managing universities, courses, destinations, blogs, inquiries, and SEO content. Built with admin Dashboard, dynamic content management, and an optimized user experience.',
+    stack: ['Next.js', 'TypeScript', 'Node.js', 'MongoDB'],
     link: '#',
-    image: '/assets/images/project-3.png'
+    image: '/assets/images/nle.png'
   }
 ]
 
@@ -1235,7 +1235,7 @@ export default function AjitKushwahaVanillaStyle() {
         /* ── Fanned Documents Projects Section ── */
         .documents-container {
           width: 100%;
-          overflow: hidden;
+          overflow: visible;
           padding: 40px 0 80px 0;
           position: relative;
         }

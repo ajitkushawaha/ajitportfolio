@@ -166,7 +166,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning className={poppins.className}>
+    <html lang="en" data-theme="light" suppressHydrationWarning className={poppins.className}>
       <head>
         {/* <script
           dangerouslySetInnerHTML={{

@@ -55,11 +55,11 @@ export default function Portfolio({ isActive }: PortfolioProps) {
    
     {
       id: 5,
-      title: 'BuiAiSolution',
+      title: 'Next Level Education',
       category: 'saas',
-      image: '/assets/images/project-2.png',
+      image: '/assets/images/project-3.png',
       link: '#',
-      description: 'AI Infrastructure Solutions'
+      description: 'Online Learning Platform'
     },
 
     // Client
@@ -69,7 +69,7 @@ export default function Portfolio({ isActive }: PortfolioProps) {
       category: 'professional',
       image: '/assets/images/visa4.png',
       link: 'https://www.visa4.com',
-      description: 'Visa Consultancy Platform'
+      description: 'Visa Booking & Consultancy Platform'
     },
     {
       id: 7,

@@ -45,10 +45,10 @@ const allProjects = [
   {
     id: '05',
     filterCat: 'saas',
-    category: 'SaaS / AI Tech',
-    title: 'BuiAiSolution',
-    description: 'Custom AI infrastructure platform for businesses requiring automated document processing.',
-    stack: ['Next.js', 'Python', 'FastAPI', 'PostgreSQL'],
+    category: 'SaaS / Education',
+    title: 'Next Level Education',
+    description: 'An interactive online learning and educational platform featuring personalized student dashboards, course management, and progress tracking.',
+    stack: ['Next.js', 'TypeScript', 'Node.js', 'MongoDB'],
     link: '#'
   },
 
@@ -56,9 +56,9 @@ const allProjects = [
   {
     id: '06',
     filterCat: 'professional',
-    category: 'Professional / Consultancy',
+    category: 'Professional / Visa Booking & Consultancy',
     title: 'Visa4.com',
-    description: 'High-performance consultant portal streamlining applicant profiling, document submittals, and visa workflow tracking.',
+    description: 'A comprehensive visa booking and consultancy platform with a high-performance portal streamlining applicant profiling, document submittals, and workflow tracking.',
     stack: ['Next.js', 'PostgreSQL', 'Figma', 'API integration'],
     link: 'https://www.visa4.com'
   },
@@ -253,7 +253,7 @@ const projectImages: Record<string, string> = {
   'Manage MyCafe': '/assets/images/managemycafe.png',
   'Parking Management System': '/assets/images/project-2.png',
   'Parking Management App': '/assets/images/PmsMobile.jpg',
-  'BuiAiSolution': '/assets/images/project-3.png',
+  'Next Level Education': '/assets/images/project-3.png',
   'Visa4.com': '/assets/images/visa4.png',
   'Growingwing': '/assets/images/growingwing.png',
   'LucaBoat': '/assets/images/LucaBoat.png',

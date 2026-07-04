@@ -18,6 +18,8 @@ const nextConfig = {
     removeConsole: process.env.NODE_ENV === 'production',
   },
 
+  outputFileTracingRoot: __dirname,
+
   // Experimental features
   experimental: {
     optimizeCss: true,

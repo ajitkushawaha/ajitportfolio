@@ -12,8 +12,6 @@ export default function ThemeToggle() {
     setMounted(true)
     // Get initial theme from localStorage or default to light
     const savedTheme = localStorage.getItem('theme') as 'light' | 'dark'
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-    
     if (savedTheme) {
       setTheme(savedTheme)
     } else {
