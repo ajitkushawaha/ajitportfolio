@@ -174,13 +174,10 @@ export default function RootLayout({
               (function() {
                 try {
                   const savedTheme = localStorage.getItem('theme');
-                  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
                   
                   let theme = 'light';
                   if (savedTheme && (savedTheme === 'light' || savedTheme === 'dark')) {
                     theme = savedTheme;
-                  } else if (prefersDark) {
-                    theme = 'dark';
                   }
                   
                   document.documentElement.setAttribute('data-theme', theme);

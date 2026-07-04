@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
+import Footer from '@/components/Footer'
 
 const blogPosts = [
   {
@@ -653,38 +654,7 @@ export default function TrialBlog() {
 
         </main>
 
-        <footer className="jordan-footer">
-          <div className="wrap">
-            <div className="foot-grid">
-              <div>
-                <p className="foot-label">Let&apos;s build</p>
-                <a href="mailto:ajit.kushwaha.work@gmail.com" style={{ textDecoration: 'none' }}>
-                  <h4 className="text-white hover-signal" style={{ margin: 0 }}>ajit.kushwaha.work@gmail.com</h4>
-                </a>
-              </div>
-              <div className="flex flex-col">
-                <p className="foot-label">Site map</p>
-                <a href="/trial">Home</a>
-                <a href="/trial#work">Work</a>
-                <a href="/trial#about">About</a>
-                <a href="/trial#resume">Resume</a>
-                <a href="/trial#contact">Contact</a>
-              </div>
-              <div className="flex flex-col">
-                <p className="foot-label">Elsewhere</p>
-                <a href="https://www.linkedin.com/in/ajitreact/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://github.com/ajitkushawaha" target="_blank" rel="noopener noreferrer">GitHub</a>
-              </div>
-            </div>
-            <div className="foot-bottom">
-              <span>BASED IN AHMEDABAD, IN — 23.0N 72.5E</span>
-              <span>© 2026 AJIT KUSHWAHA</span>
-            </div>
-            <div className="foot-large-name">
-              AJIT KUSHWAHA
-            </div>
-          </div>
-        </footer>
+        <Footer />
 
       </div>
     </>

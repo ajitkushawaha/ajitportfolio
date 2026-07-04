@@ -21,8 +21,8 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     
     if (savedTheme) {
       setTheme(savedTheme)
-    } else if (prefersDark) {
-      setTheme('dark')
+    } else {
+      setTheme('light')
     }
   }, [])
 

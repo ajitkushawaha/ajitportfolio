@@ -1,6 +1,8 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
+import Footer from '@/components/Footer'
+import ThemeToggle from '@/components/ThemeToggle'
 
 const blogPosts = [
   {
@@ -281,7 +283,23 @@ export default function TrialBlog() {
   return (
     <>
       <style dangerouslySetInnerHTML={{ __html: `
-        :root {
+        :root, [data-theme="light"] {
+          --navy: #FFFFFF;
+          --navy-deep: #FFFFFF;
+          --line: #4F7FA3;
+          --line-soft: rgba(79,127,163,0.12);
+          --signal: #FF6B35;
+          --paper: #0E1B2E;
+          --ink: #0E1B2E;
+          --ink-dim: #3A4D62;
+          --ink-faint: #5C7088;
+
+          --display: 'Space Grotesk', sans-serif;
+          --body: 'Inter', sans-serif;
+          --mono: 'IBM Plex Mono', monospace;
+        }
+
+        [data-theme="dark"] {
           --navy: #0E1B2E;
           --navy-deep: #0A1422;
           --line: #4F7FA3;
@@ -291,10 +309,6 @@ export default function TrialBlog() {
           --ink: #EDEFF2;
           --ink-dim: #8FA2B8;
           --ink-faint: #5C7088;
-
-          --display: 'Space Grotesk', sans-serif;
-          --body: 'Inter', sans-serif;
-          --mono: 'IBM Plex Mono', monospace;
         }
 
         .jordan-body {
@@ -311,6 +325,18 @@ export default function TrialBlog() {
         }
 
         .wrap { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+
+        [data-theme="light"] header.jordan-header,
+        [data-theme="light"] body.scrolled header.jordan-header,
+        [data-theme="light"] body.scrolled header.jordan-header:hover {
+          background: rgba(255, 255, 255, 0.96);
+          border-color: rgba(79, 127, 163, 0.2);
+          box-shadow: 0 16px 36px rgba(14, 27, 46, 0.12);
+        }
+        [data-theme="light"] .blog-card,
+        [data-theme="light"] .blog-img-wrap {
+          background: #ffffff;
+        }
 
         .bracketed {
           position: relative;
@@ -597,7 +623,8 @@ export default function TrialBlog() {
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-      <div className="jordan-body min-h-screen text-slate-100 selection:bg-[#FF6B35] selection:text-[#0A1422]">
+      <div className="jordan-body min-h-screen selection:bg-[#FF6B35] selection:text-[#0A1422]">
+        <ThemeToggle />
         
         <header className="jordan-header">
           <nav className="nav">
@@ -653,38 +680,7 @@ export default function TrialBlog() {
 
         </main>
 
-        <footer className="jordan-footer">
-          <div className="wrap">
-            <div className="foot-grid">
-              <div>
-                <p className="foot-label">Let&apos;s build</p>
-                <a href="mailto:ajit.kushwaha.work@gmail.com" style={{ textDecoration: 'none' }}>
-                  <h4 className="text-white hover-signal" style={{ margin: 0 }}>ajit.kushwaha.work@gmail.com</h4>
-                </a>
-              </div>
-              <div className="flex flex-col">
-                <p className="foot-label">Site map</p>
-                <a href="/">Home</a>
-                <a href="/#work">Work</a>
-                <a href="/#about">About</a>
-                <a href="/#resume">Resume</a>
-                <a href="/#contact">Contact</a>
-              </div>
-              <div className="flex flex-col">
-                <p className="foot-label">Elsewhere</p>
-                <a href="https://www.linkedin.com/in/ajitreact/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://github.com/ajitkushawaha" target="_blank" rel="noopener noreferrer">GitHub</a>
-              </div>
-            </div>
-            <div className="foot-bottom">
-              <span>BASED IN AHMEDABAD, IN — 23.0N 72.5E</span>
-              <span>© 2026 AJIT KUSHWAHA</span>
-            </div>
-            <div className="foot-large-name">
-              AJIT KUSHWAHA
-            </div>
-          </div>
-        </footer>
+        <Footer />
 
       </div>
     </>

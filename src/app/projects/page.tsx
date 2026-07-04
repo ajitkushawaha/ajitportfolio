@@ -1,26 +1,28 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
+import Footer from '@/components/Footer'
+import ThemeToggle from '@/components/ThemeToggle'
 
 const allProjects = [
   // SaaS
   {
     id: '01',
     filterCat: 'saas',
-    category: 'SaaS / AI Support',
+    category: 'Owned Product / AI SaaS',
     title: 'KwickLingo Chat Widget',
-    description: 'An intelligent AI-powered chat widget to replace manual customer support operations with automated messaging.',
+    description: 'My independently built AI support SaaS product, designed and shipped from product strategy and architecture through production deployment.',
     stack: ['Next.js', 'TypeScript', 'Node.js', 'MongoDB'],
-    link: 'https://kwicklingo.com/'
+    link: '/projects/kwicklingo'
   },
   {
     id: '02',
     filterCat: 'saas',
-    category: 'SaaS / Restaurant Management System',
+    category: 'Owned Product / Restaurant SaaS',
     title: 'Manage MyCafe',
-    description: 'ManageMy.cafe is a digital QR-menu & online ordering platform for restaurants/cafes in India.',
+    description: 'My restaurant SaaS product for digital QR menus and online ordering, built across product UX, full-stack engineering, and deployment.',
     stack: ['React', 'Express', 'MongoDB', 'Node.js'],
-    link: 'https://managemy.cafe'
+    link: '/projects/managemycafe'
   },
   {
     id: '03',
@@ -245,6 +247,35 @@ const allProjects = [
     link: 'https://ajitkushawaha.github.io'
   }
 ]
+
+const projectImages: Record<string, string> = {
+  'KwickLingo Chat Widget': '/assets/images/project-1.png',
+  'Manage MyCafe': '/assets/images/managemycafe.png',
+  'Parking Management System': '/assets/images/project-2.png',
+  'Parking Management App': '/assets/images/PmsMobile.jpg',
+  'BuiAiSolution': '/assets/images/project-3.png',
+  'Visa4.com': '/assets/images/visa4.png',
+  'Growingwing': '/assets/images/growingwing.png',
+  'LucaBoat': '/assets/images/LucaBoat.png',
+  'Workforce LMS': '/assets/images/PmsMobile.jpg',
+  'Gect Ngo': '/assets/images/gectngo.png',
+  'Rakpolyplast': '/assets/images/rakpolyplast.png',
+  'Incredible Man': '/assets/images/im.png',
+  'Visal': '/assets/images/visal.png',
+  'Mister Bouton': '/assets/images/misterbouton.png',
+  'Blue City Real Estate': '/assets/images/bluecity.png',
+  'London Crust': '/assets/images/londan.png',
+  'MeowParivar': '/assets/images/meowparivar.png',
+  'kwicklingo.com': '/assets/images/project-1.png',
+  'Village Fress': '/assets/images/Village.png',
+  'YouTube Clone': '/assets/images/yt.png',
+  'Airbnb Clone': '/assets/images/airbnb.png',
+  'Facebook Clone': '/assets/images/project-7.png',
+  'Contact Manager': '/assets/images/cm.png',
+  'Restaurant Website': '/assets/images/project5.png',
+  'Adventure Site': '/assets/images/natureWeb.png',
+  'Portfolio Website': '/assets/images/portfolio.png',
+}
 
 const filters = [
   { id: 'all', label: 'All Projects' },
@@ -490,7 +521,23 @@ export default function TrialProjects() {
     <>
       <style dangerouslySetInnerHTML={{
         __html: `
-        :root {
+        :root, [data-theme="light"] {
+          --navy: #FFFFFF;
+          --navy-deep: #FFFFFF;
+          --line: #4F7FA3;
+          --line-soft: rgba(79,127,163,0.12);
+          --signal: #FF6B35;
+          --paper: #0E1B2E;
+          --ink: #0E1B2E;
+          --ink-dim: #3A4D62;
+          --ink-faint: #5C7088;
+
+          --display: 'Space Grotesk', sans-serif;
+          --body: 'Inter', sans-serif;
+          --mono: 'IBM Plex Mono', monospace;
+        }
+
+        [data-theme="dark"] {
           --navy: #0E1B2E;
           --navy-deep: #0A1422;
           --line: #4F7FA3;
@@ -500,10 +547,6 @@ export default function TrialProjects() {
           --ink: #EDEFF2;
           --ink-dim: #8FA2B8;
           --ink-faint: #5C7088;
-
-          --display: 'Space Grotesk', sans-serif;
-          --body: 'Inter', sans-serif;
-          --mono: 'IBM Plex Mono', monospace;
         }
 
         .jordan-body {
@@ -520,6 +563,18 @@ export default function TrialProjects() {
         }
 
         .wrap { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+
+        [data-theme="light"] header.jordan-header,
+        [data-theme="light"] body.scrolled header.jordan-header,
+        [data-theme="light"] body.scrolled header.jordan-header:hover {
+          background: rgba(255, 255, 255, 0.96);
+          border-color: rgba(79, 127, 163, 0.2);
+          box-shadow: 0 16px 36px rgba(14, 27, 46, 0.12);
+        }
+        [data-theme="light"] .proj-card,
+        [data-theme="light"] .proj-card:hover {
+          background: #ffffff;
+        }
 
         .bracketed {
           position: relative;
@@ -735,7 +790,7 @@ export default function TrialProjects() {
           font-size: 12px;
           color: var(--ink-dim);
           border: 1px solid var(--line-soft);
-          background: rgba(14,27,46,0.5);
+          background: var(--navy-deep);
           padding: 8px 16px;
           cursor: pointer;
           transition: border-color .2s ease, color .2s ease, background .2s ease;
@@ -746,7 +801,7 @@ export default function TrialProjects() {
         }
         .tab-btn.active {
           border-color: var(--signal);
-          color: var(--navy-deep);
+          color: #ffffff;
           background: var(--signal);
           font-weight: 500;
         }
@@ -763,6 +818,24 @@ export default function TrialProjects() {
           transition: background .25s ease;
         }
         .proj-card:hover { background: var(--navy-deep); }
+        .project-screenshot {
+          width: 100%;
+          aspect-ratio: 16 / 9;
+          margin-bottom: 24px;
+          border: 1px solid var(--line-soft);
+          border-radius: 10px;
+          overflow: hidden;
+          background: var(--navy-deep);
+        }
+        .project-screenshot img {
+          width: 100%;
+          height: 100%;
+          display: block;
+          object-fit: cover;
+          object-position: top center;
+          transition: transform .4s ease;
+        }
+        .proj-card:hover .project-screenshot img { transform: scale(1.035); }
         .proj-id {
           font-family: var(--mono); font-size: 12px; color: var(--ink-faint);
           display: flex; justify-content: space-between; margin-bottom: 28px;
@@ -830,7 +903,8 @@ export default function TrialProjects() {
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-      <div className="jordan-body min-h-screen text-slate-100 selection:bg-[#FF6B35] selection:text-[#0A1422]">
+      <div className="jordan-body min-h-screen selection:bg-[#FF6B35] selection:text-[#0A1422]">
+        <ThemeToggle />
 
         <header className="jordan-header">
           <nav className="nav">
@@ -876,6 +950,9 @@ export default function TrialProjects() {
                 {filtered.map((project, idx) => (
                   <div key={idx} className="proj-card bracketed reveal">
                     <span className="bk-tr"></span><span className="bk-br"></span>
+                    <div className="project-screenshot">
+                      <img src={projectImages[project.title]} alt={`${project.title} screenshot`} loading="lazy" />
+                    </div>
                     <div className="proj-id">
                       <span>PRJ — {project.id}</span>
                       <span className="tag">{project.category}</span>
@@ -904,38 +981,7 @@ export default function TrialProjects() {
 
         </main>
 
-        <footer className="jordan-footer">
-          <div className="wrap">
-            <div className="foot-grid">
-              <div>
-                <p className="foot-label">Let&apos;s build</p>
-                <a href="mailto:ajit.kushwaha.work@gmail.com" style={{ textDecoration: 'none' }}>
-                  <h4 className="text-white hover-signal" style={{ margin: 0 }}>ajit.kushwaha.work@gmail.com</h4>
-                </a>
-              </div>
-              <div className="flex flex-col">
-                <p className="foot-label">Site map</p>
-                <a href="/">Home</a>
-                <a href="/#work">Work</a>
-                <a href="/#about">About</a>
-                <a href="/#resume">Resume</a>
-                <a href="/#contact">Contact</a>
-              </div>
-              <div className="flex flex-col">
-                <p className="foot-label">Elsewhere</p>
-                <a href="https://www.linkedin.com/in/ajitreact/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://github.com/ajitkushawaha" target="_blank" rel="noopener noreferrer">GitHub</a>
-              </div>
-            </div>
-            <div className="foot-bottom">
-              <span>BASED IN AHMEDABAD, IN — 23.0N 72.5E</span>
-              <span>© 2026 AJIT KUSHWAHA</span>
-            </div>
-            <div className="foot-large-name">
-              AJIT KUSHWAHA
-            </div>
-          </div>
-        </footer>
+        <Footer />
 
       </div>
     </>

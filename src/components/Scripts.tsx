@@ -9,14 +9,11 @@ export default function Scripts() {
     const initializeTheme = () => {
       try {
         const savedTheme = localStorage.getItem('theme');
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
         let theme = 'light'; // default
 
         if (savedTheme && (savedTheme === 'light' || savedTheme === 'dark')) {
           theme = savedTheme;
-        } else if (prefersDark) {
-          theme = 'dark';
         }
 
         document.documentElement.setAttribute('data-theme', theme);

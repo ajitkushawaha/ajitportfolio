@@ -16,8 +16,8 @@ export default function ThemeToggle() {
     
     if (savedTheme) {
       setTheme(savedTheme)
-    } else if (prefersDark) {
-      setTheme('dark')
+    } else {
+      setTheme('light')
     }
   }, [])
 
