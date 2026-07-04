@@ -329,10 +329,12 @@ export default function TrialBlog() {
         [data-theme="light"] header.jordan-header,
         [data-theme="light"] body.scrolled header.jordan-header,
         [data-theme="light"] body.scrolled header.jordan-header:hover {
-          background: rgba(255, 255, 255, 0.96);
-          border-color: rgba(79, 127, 163, 0.2);
-          box-shadow: 0 16px 36px rgba(14, 27, 46, 0.12);
+          background: rgba(0, 0, 0, 0.96);
+          border-color: rgba(255, 107, 53, 0.28);
+          box-shadow: 0 18px 36px rgba(0, 0, 0, 0.28);
         }
+        [data-theme="light"] header.jordan-header .logo,
+        [data-theme="light"] header.jordan-header .nav-links a { color: #EDEFF2; }
         [data-theme="light"] .blog-card,
         [data-theme="light"] .blog-img-wrap {
           background: #ffffff;
@@ -519,9 +521,10 @@ export default function TrialBlog() {
         }
         .jordan-h1 {
           font-family: var(--display); font-weight: 700;
-          font-size: clamp(40px, 7vw, 84px);
+          font-size: clamp(20px, 5.5vw, 68px);
           line-height: 1.02; letter-spacing: -0.02em;
-          max-width: 920px;
+          max-width: none; white-space: nowrap; display: flex;
+          flex-wrap: nowrap; align-items: baseline; width: max-content;
         }
         .jordan-h1 .accent { color: var(--signal); }
 
@@ -648,12 +651,12 @@ export default function TrialBlog() {
             <section className="hero" style={{ paddingBottom: 0 }}>
               <div className="hero-canvas-wrap" id="heroCanvasWrap" aria-hidden="true" />
               <p className="eyebrow">READING / 05 ARTICLES</p>
-              <h1 className="jordan-h1 text-white">Thoughts, guides, &amp; <span className="accent">stories.</span></h1>
+              <h1 className="jordan-h1 text-white">Thoughts,&nbsp;guides,&nbsp;&amp;&nbsp;<span className="accent">stories.</span></h1>
             </section>
           </div>
 
           <div className="wrap">
-            <section id="blog-posts" style={{ paddingTop: 0 }}>
+            <section id="blog-posts" style={{ paddingTop: 40 }}>
               <div className="blog-grid reveal in">
                 {blogPosts.map((post, idx) => (
                   <div key={idx} className="blog-card bracketed">

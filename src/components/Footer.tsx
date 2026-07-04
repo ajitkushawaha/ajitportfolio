@@ -2,14 +2,11 @@
 
 import React, { useEffect, useState } from 'react'
 import { Linkedin, Github, Mail, ArrowUpRight, Globe, Clock } from 'lucide-react'
-import { usePathname } from 'next/navigation'
 
 export default function Footer() {
   const [time, setTime] = useState('')
-  const pathname = usePathname()
-  const isTrial = pathname?.startsWith('/trial')
-  const prefix = isTrial ? '/trial' : ''
-  const homeLink = isTrial ? '/trial' : '/'
+  const prefix = ''
+  const homeLink = '/'
 
   useEffect(() => {
     const updateTime = () => {

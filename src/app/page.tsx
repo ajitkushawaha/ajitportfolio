@@ -1410,9 +1410,9 @@ export default function AjitKushwahaVanillaStyle() {
           background-color: #ffffff;
         }
         [data-theme="light"] header.jordan-header {
-          background: rgba(255, 255, 255, 0.92);
-          box-shadow: 0 16px 32px rgba(0,0,0,0.08);
-          border-color: rgba(79, 127, 163, 0.2);
+          background: rgba(0, 0, 0, 0.96);
+          box-shadow: 0 18px 36px rgba(0,0,0,0.28);
+          border-color: rgba(255, 107, 53, 0.28);
         }
         [data-theme="light"] body.scrolled header.jordan-header,
         [data-theme="light"] body.scrolled header.jordan-header:hover {
@@ -1429,7 +1429,7 @@ export default function AjitKushwahaVanillaStyle() {
         }
         [data-theme="light"] header.jordan-header .logo,
         [data-theme="light"] header.jordan-header .nav-links a {
-          color: var(--ink);
+          color: #EDEFF2;
         }
         [data-theme="light"] header.jordan-header .nav-links a:hover {
           color: var(--signal);
@@ -1514,7 +1514,7 @@ export default function AjitKushwahaVanillaStyle() {
                   applications across frontend, backend, databases, integrations, and deployment.
                 </p>
                 <div className="hero-actions">
-                  <a href="#work" className="btn btn-primary">View the work →</a>
+                  <a href="/projects" className="btn btn-primary">View the work →</a>
                   <a href="#contact" className="btn btn-ghost">Discuss an opportunity</a>
                   <a href="/AJIT_KUSHWAHA.pdf" download="Ajit-Kushwaha-Resume.pdf" className="btn btn-ghost">Download résumé ↓</a>
                 </div>

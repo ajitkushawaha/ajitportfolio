@@ -28,10 +28,11 @@ const allProjects = [
     id: '03',
     filterCat: 'saas',
     category: 'SaaS / Operations',
-    title: 'Parking Management System',
+    title: 'Parking Management System Web',
     description: 'Smart parking solution simplifying facility management, automated billing, and real-time space tracking.',
     stack: ['React', 'Node.js', 'Express', 'MongoDB'],
-    link: '#'
+    link: '/projects/parking-management',
+    linkLabel: 'Read case study →'
   },
   {
     id: '04',
@@ -44,12 +45,12 @@ const allProjects = [
   },
   {
     id: '05',
-    filterCat: 'saas',
-    category: 'SaaS / Education',
+    filterCat: 'professional',
+    category: 'Professional / Education',
     title: 'Next Level Education',
     description: 'An interactive online learning and educational platform featuring personalized student dashboards, course management, and progress tracking.',
     stack: ['Next.js', 'TypeScript', 'Node.js', 'MongoDB'],
-    link: '#'
+    link: 'https://www.nextlevel.edu.lk/'
   },
 
   // Professional
@@ -69,7 +70,7 @@ const allProjects = [
     title: 'Growingwing',
     description: 'Interactive educational platform delivering custom curriculum and virtual learning portals for children.',
     stack: ['React', 'Node.js', 'CSS Modules'],
-    link: '#'
+    link: 'https://growingwing.in/'
   },
   {
     id: '08',
@@ -78,7 +79,7 @@ const allProjects = [
     title: 'LucaBoat',
     description: 'Premium boat rental booking service equipped with interactive location filtering and secure reservation checkout.',
     stack: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
-    link: '#'
+    link: 'https://www.luccabot.com/'
   },
   {
     id: '09',
@@ -96,7 +97,7 @@ const allProjects = [
     title: 'Gect Ngo',
     description: 'Web presence for a non-profit organization featuring donation systems, project showcase, and volunteer registries.',
     stack: ['HTML5', 'CSS3', 'JavaScript', 'PHP'],
-    link: '#'
+    link: 'https://www.gectngo.org/'
   },
   {
     id: '11',
@@ -152,26 +153,7 @@ const allProjects = [
     stack: ['React', 'CSS Modules', 'Vercel'],
     link: 'https://londoncrust.vercel.app/'
   },
-  {
-    id: '17',
-    filterCat: 'professional',
-    category: 'Professional / E-Commerce',
-    title: 'MeowParivar',
-    description: 'A full-featured pet product storefront with custom recommendation filters, payment options, and shipping systems.',
-    stack: ['React', 'TypeScript', 'Stripe', 'Tailwind CSS'],
-    link: 'https://www.meowprivar.in'
-  },
-
-  // Ventures
-  {
-    id: '18',
-    filterCat: 'ventures',
-    category: 'Ventures / AI Chatbot',
-    title: 'kwicklingo.com',
-    description: 'Corporate site for KwickLingo platform, advertising AI chatbot features and developer APIs.',
-    stack: ['Next.js', 'Node.js', 'Tailwind CSS'],
-    link: 'https://kwicklingo.com'
-  },
+  
 
   // Labs
   {
@@ -248,16 +230,16 @@ const allProjects = [
   }
 ]
 
-const projectImages: Record<string, string> = {
-  'KwickLingo Chat Widget': '/assets/images/project-1.png',
-  'Manage MyCafe': '/assets/images/managemycafe.png',
-  'Parking Management System': '/assets/images/project-2.png',
+const legacyProjectImages: Record<string, string> = {
+  'KwickLingo Chat Widget': '/assets/images/project-8.png',
+  'Manage MyCafe': '/assets/images/mmc.png',
+  'Parking Management System Web': '/assets/images/project-1.png',
   'Parking Management App': '/assets/images/PmsMobile.jpg',
-  'Next Level Education': '/assets/images/project-3.png',
+  'Next Level Education': '/assets/images/nle.png',
   'Visa4.com': '/assets/images/visa4.png',
   'Growingwing': '/assets/images/growingwing.png',
   'LucaBoat': '/assets/images/LucaBoat.png',
-  'Workforce LMS': '/assets/images/PmsMobile.jpg',
+  'Workforce LMS': '/assets/images/lms.png',
   'Gect Ngo': '/assets/images/gectngo.png',
   'Rakpolyplast': '/assets/images/rakpolyplast.png',
   'Incredible Man': '/assets/images/im.png',
@@ -265,8 +247,6 @@ const projectImages: Record<string, string> = {
   'Mister Bouton': '/assets/images/misterbouton.png',
   'Blue City Real Estate': '/assets/images/bluecity.png',
   'London Crust': '/assets/images/londan.png',
-  'MeowParivar': '/assets/images/meowparivar.png',
-  'kwicklingo.com': '/assets/images/project-1.png',
   'Village Fress': '/assets/images/Village.png',
   'YouTube Clone': '/assets/images/yt.png',
   'Airbnb Clone': '/assets/images/airbnb.png',
@@ -276,6 +256,14 @@ const projectImages: Record<string, string> = {
   'Adventure Site': '/assets/images/natureWeb.png',
   'Portfolio Website': '/assets/images/portfolio.png',
 }
+
+const projects = allProjects
+  .map((project) => ({ ...project, image: legacyProjectImages[project.title] }))
+  .sort((a, b) => {
+    const rank = (link: string) => link.startsWith('/projects/') ? 0 : /github\.com|vercel\.app|github\.io/.test(link) ? 2 : 1
+    return rank(a.link) - rank(b.link)
+  })
+  .map((project, index) => ({ ...project, id: String(index + 1).padStart(2, '0') }))
 
 const filters = [
   { id: 'all', label: 'All Projects' },
@@ -514,8 +502,8 @@ export default function TrialProjects() {
   }, [])
 
   const filtered = activeFilter === 'all'
-    ? allProjects
-    : allProjects.filter(p => p.filterCat === activeFilter)
+    ? projects
+    : projects.filter(p => p.filterCat === activeFilter)
 
   return (
     <>
@@ -567,10 +555,12 @@ export default function TrialProjects() {
         [data-theme="light"] header.jordan-header,
         [data-theme="light"] body.scrolled header.jordan-header,
         [data-theme="light"] body.scrolled header.jordan-header:hover {
-          background: rgba(255, 255, 255, 0.96);
-          border-color: rgba(79, 127, 163, 0.2);
-          box-shadow: 0 16px 36px rgba(14, 27, 46, 0.12);
+          background: rgba(0, 0, 0, 0.96);
+          border-color: rgba(255, 107, 53, 0.28);
+          box-shadow: 0 18px 36px rgba(0, 0, 0, 0.28);
         }
+        [data-theme="light"] header.jordan-header .logo,
+        [data-theme="light"] header.jordan-header .nav-links a { color: #EDEFF2; }
         [data-theme="light"] .proj-card,
         [data-theme="light"] .proj-card:hover {
           background: #ffffff;
@@ -757,9 +747,14 @@ export default function TrialProjects() {
         }
         .jordan-h1 {
           font-family: var(--display); font-weight: 700;
-          font-size: clamp(40px, 7vw, 84px);
+          font-size: clamp(20px, 5.5vw, 68px);
           line-height: 1.02; letter-spacing: -0.02em;
-          max-width: 920px;
+          max-width: none;
+          white-space: nowrap;
+          display: flex;
+          flex-wrap: nowrap;
+          align-items: baseline;
+          width: max-content;
         }
         .jordan-h1 .accent { color: var(--signal); }
 
@@ -928,12 +923,12 @@ export default function TrialProjects() {
             <section className="hero" style={{ paddingBottom: 0 }}>
               <div className="hero-canvas-wrap" id="heroCanvasWrap" aria-hidden="true" />
               <p className="eyebrow">ARCHIVE / 26 BUILDS</p>
-              <h1 className="jordan-h1 text-white">All projects &amp; <span className="accent">deployments.</span></h1>
+              <h1 className="jordan-h1 text-white">All&nbsp;projects&nbsp;&amp;&nbsp;<span className="accent">deployments.</span></h1>
             </section>
           </div>
 
           <div className="wrap">
-            <section id="archive" style={{ paddingTop: 0 }}>
+            <section id="archive" style={{ paddingTop: "1rem" }}>
               <div className="tabs-list">
                 {filters.map((filter) => (
                   <button
@@ -951,7 +946,7 @@ export default function TrialProjects() {
                   <div key={idx} className="proj-card bracketed reveal">
                     <span className="bk-tr"></span><span className="bk-br"></span>
                     <div className="project-screenshot">
-                      <img src={projectImages[project.title]} alt={`${project.title} screenshot`} loading="lazy" />
+                      <img src={project.image} alt={`${project.title} screenshot`} loading="lazy" />
                     </div>
                     <div className="proj-id">
                       <span>PRJ — {project.id}</span>
@@ -966,7 +961,7 @@ export default function TrialProjects() {
                     </div>
                     {project.link && project.link !== '#' ? (
                       <a href={project.link} target="_blank" rel="noopener noreferrer" className="proj-link">
-                        View project →
+                        {project.linkLabel ?? 'View project →'}
                       </a>
                     ) : (
                       <span className="proj-link" style={{ color: 'var(--ink-faint)', cursor: 'not-allowed' }}>
