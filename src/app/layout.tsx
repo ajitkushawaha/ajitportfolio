@@ -13,15 +13,15 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Ajit Kushwaha – Co-Founder of Codyn',
+    default: 'Ajit Kushwaha – Freelance Full Stack Developer',
     template: '%s | Ajit Kushwaha - ajitReact'
   },
-  description: 'Ajit Kushwaha is a Co-Founder and Full-Stack Engineer specializing in building SaaS and AI products. Based in Ahmedabad, India, he is passionate about modern web applications and full-stack development. Visit www.ajitreact.site for professional web development services.',
+  description: 'Ajit Kushwaha is a Freelance Full Stack Developer specializing in production SaaS and AI products using React, Next.js, Node.js, and modern databases.',
   keywords: [
     'Ajit Kushwaha',
     'ajitReact',
     'www.ajitreact.site',
-    'Co-Founder',
+    'Freelance Full Stack Developer',
     'Full-Stack Engineer',
     'SaaS',
     'AI Products',
@@ -96,15 +96,15 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://www.ajitreact.site',
-    title: 'Ajit Kushwaha – Co-Founder, Full-Stack Engineer building SaaS & AI Products',
-    description: 'Ajit Kushwaha is a Co-Founder and Full-Stack Engineer specializing in building SaaS and AI products. Based in Ahmedabad, India, he is passionate about modern web applications and full-stack development. Visit www.ajitreact.site for professional web development services.',
+    title: 'Ajit Kushwaha – Freelance Full Stack Developer',
+    description: 'Freelance Full Stack Developer building production SaaS and AI products with React, Next.js, Node.js, and modern databases.',
     siteName: 'Ajit Kushwaha Portfolio - ajitReact',
     images: [
       {
         url: '/icons/ajit.jpeg',
         width: 1200,
         height: 630,
-        alt: 'Ajit Kushwaha – Co-Founder, Full-Stack Engineer building SaaS & AI Products'
+        alt: 'Ajit Kushwaha – Freelance Full Stack Developer'
       }
     ]
   },

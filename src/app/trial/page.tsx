@@ -60,7 +60,7 @@ const resumeTimeline = [
     badge: 'STEP 1',
     color: 'purple',
     title: 'Full Stack Product Engineer',
-    company: 'Codyn',
+    company: 'Freelance',
     period: 'Nov 2024 - Present',
     description: 'Building and shipping production SaaS products across frontend, backend, databases, integrations, and deployment.',
     details: [
@@ -1646,7 +1646,7 @@ export default function AjitKushwahaVanillaStyle() {
                     I started out breaking things on purpose — web servers, UI components,
                     then production databases (once, briefly). Somewhere along the way that
                     curiosity turned into a job: building software, structuring system APIs, and
-                    co-founding Codyn.
+                    working independently as a freelance full-stack developer.
                   </p>
                   <p>
                     Today, people come to me with a rough idea and a deadline, and I

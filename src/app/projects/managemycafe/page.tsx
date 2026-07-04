@@ -53,7 +53,7 @@ export default function ManageMyCafeCaseStudy() {
             <div><b>Role</b><span>Creator · Full Stack Product Engineer</span></div>
             <div><b>Scope</b><span>Idea → architecture → production</span></div>
             <div><b>Stack</b><span>React · Express · MongoDB · Node.js</span></div>
-            <div><b>Status</b><span>Founder-built live SaaS product</span></div>
+            <div><b>Status</b><span>Independently built live SaaS product</span></div>
           </div>
         </header>
 

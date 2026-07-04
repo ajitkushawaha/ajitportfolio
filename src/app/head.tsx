@@ -2,9 +2,9 @@ export default function Head() {
   return (
     <>
       {/* Primary Meta Tags */}
-      <title>Ajit Kushwaha – Co-Founder of Codyn </title>
-      <meta name="title" content="Ajit Kushwaha – Co-Founder, Full-Stack Engineer building SaaS & AI Products" />
-      <meta name="description" content="Ajit Kushwaha is a Co-Founder and Full-Stack Engineer specializing in building SaaS and AI products. Based in Ahmedabad, India, he is passionate about modern web applications and full-stack development." />
+      <title>Ajit Kushwaha – Freelance Full Stack Developer</title>
+      <meta name="title" content="Ajit Kushwaha – Freelance Full Stack Developer" />
+      <meta name="description" content="Ajit Kushwaha is a Freelance Full Stack Developer specializing in production SaaS and AI products." />
       <meta name="keywords" content="Ajit Kushwaha, Full-Stack Engineer, SaaS, AI Products, web development, frontend development, backend development, Ahmedabad, India, portfolio, web applications" />
       <meta name="author" content="Ajit Kushwaha" />
       <meta name="robots" content="index, follow" />
@@ -17,8 +17,8 @@ export default function Head() {
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://ajitreact.site/" />
-      <meta property="og:title" content="Ajit Kushwaha – Co-Founder, Full-Stack Engineer building SaaS & AI Products" />
-      <meta property="og:description" content="Ajit Kushwaha is a Co-Founder and Full-Stack Engineer specializing in building SaaS and AI products. Based in Ahmedabad, India, he is passionate about modern web applications and full-stack development. Visit ajitreact.site for professional web development services." />
+      <meta property="og:title" content="Ajit Kushwaha – Freelance Full Stack Developer" />
+      <meta property="og:description" content="Freelance Full Stack Developer building production SaaS and AI products." />
       <meta property="og:image" content="https://ajitreact.site/assets/images/my-avatar.png" />
       <meta property="og:site_name" content="Ajit Kushwaha Portfolio - ajitReact" />
       <meta property="og:locale" content="en_US" />
@@ -26,8 +26,8 @@ export default function Head() {
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://ajitreact.site/" />
-      <meta property="twitter:title" content="Ajit Kushwaha – Co-Founder, Full-Stack Engineer building SaaS & AI Products" />
-      <meta property="twitter:description" content="Ajit Kushwaha is a Co-Founder and Full-Stack Engineer specializing in building SaaS and AI products. Based in Ahmedabad, India, he is passionate about modern web applications and full-stack development." />
+      <meta property="twitter:title" content="Ajit Kushwaha – Freelance Full Stack Developer" />
+      <meta property="twitter:description" content="Freelance Full Stack Developer building production SaaS and AI products." />
       <meta property="twitter:image" content="https://ajitreact.site/assets/images/my-avatar.png" />
       <meta property="twitter:creator" content="@ajitkushwaha" />
 

@@ -6,7 +6,7 @@ export default function AboutContent() {
     <>
       <section className="about-text">
         <p>
-          I’m a Co-Founder and product-focused Full-Stack Engineer based in Ahmedabad, India. I specialize in building real-world SaaS products and scalable web applications.
+          I’m a Freelance Full Stack Developer based in Ahmedabad, India. I specialize in building real-world SaaS products and scalable web applications.
         </p>
         <p>
           My work focuses on turning ideas into functional products — from designing frontend systems with React and React Native to building backend APIs, databases, and cloud infrastructure.

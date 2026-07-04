@@ -82,7 +82,7 @@ export default function KwickLingoCaseStudy() {
             <div><b>Role</b><span>Creator · Full Stack Developer</span></div>
             <div><b>Scope</b><span>Idea → architecture → production</span></div>
             <div><b>Platform</b><span>Web SaaS</span></div>
-            <div><b>Status</b><span>Founder-built live SaaS product</span></div>
+            <div><b>Status</b><span>Independently built live SaaS product</span></div>
           </div>
         </header>
 

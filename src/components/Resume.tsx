@@ -21,10 +21,10 @@ export default function Resume({ isActive }: ResumeProps) {
 
   const experience = [
     {
-      title: 'Co-Founder & CTO',
-      company: 'Codyn',
+      title: 'Freelance Full Stack Developer',
+      company: 'Freelance',
       period: 'Nov 2024 - Present',
-      description: 'Co-founded Codyn and leading the technology vision and execution. Architected and developed SaaS products including Kwicklingo. Built and maintained scalable web applications using React.js, Next.js, Node.js, and Tailwind CSS. Responsible for system design, product development, deployments, and technical decision-making.'
+      description: 'Designing and building full-stack SaaS products using React, Next.js, Node.js, and modern databases. Responsible for product development, APIs, integrations, deployments, and production support.'
     }
     ,
 
