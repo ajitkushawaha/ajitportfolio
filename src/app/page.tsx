@@ -644,8 +644,13 @@ export default function AjitKushwahaVanillaStyle() {
 
         /* ---------- hero ---------- */
         .hero {
-          padding: 168px 0 100px;
+          padding: 160px 0 100px;
           position: relative;
+        }
+        @media (max-width: 768px) {
+          .hero {
+            padding: 104px 0 100px;
+          }
         }
         .hero-canvas-wrap {
           position: absolute;
@@ -712,7 +717,22 @@ export default function AjitKushwahaVanillaStyle() {
         section { padding: 60px 0; position: relative; }
         .sec-head {
           display: flex; justify-content: space-between; align-items: flex-end;
-          margin-bottom: 56px; gap: 24px; flex-wrap: wrap;
+           gap: 24px; flex-wrap: wrap;
+        }
+        @media (max-width: 768px) {
+          section {
+            padding: 38px 0;
+          }
+          .sec-head {
+            gap: 10px;
+            margin-bottom: 22px;
+          }
+          .sec-tag {
+            margin-bottom: 8px;
+          }
+          .sec-head .sec-note {
+            margin-top: 6px;
+          }
         }
         @media (min-width: 769px) {
           .sec-head {
@@ -804,6 +824,33 @@ export default function AjitKushwahaVanillaStyle() {
         }
         .about-copy p { color: var(--ink-dim); margin-bottom: 18px; font-size: 16px; max-width: 600px; }
         .about-copy strong { color: var(--ink); font-weight: 600; }
+        .about-highlight {
+          position: relative;
+          color: var(--ink);
+          font-weight: 700;
+          padding: 0 3px 1px;
+          background:
+            linear-gradient(104deg, rgba(255, 107, 53, 0) 0%, rgba(255, 107, 53, 0.34) 8%, rgba(255, 107, 53, 0.26) 92%, rgba(255, 107, 53, 0) 100%);
+          background-size: 65% 0.58em;
+          background-repeat: no-repeat;
+          background-position: 0 72%;
+          box-decoration-break: clone;
+          -webkit-box-decoration-break: clone;
+        }
+        .about-pill {
+          position: relative;
+          display: inline;
+          color: var(--ink);
+          font-weight: 700;
+          padding: 0 4px 1px;
+          background:
+            linear-gradient(104deg, rgba(255, 107, 53, 0) 0%, rgba(255, 107, 53, 0.36) 8%, rgba(255, 107, 53, 0.28) 92%, rgba(255, 107, 53, 0) 100%);
+          background-size: 100% 0.62em;
+          background-repeat: no-repeat;
+          background-position: 0 72%;
+          box-decoration-break: clone;
+          -webkit-box-decoration-break: clone;
+        }
         .about-socials {
           display: flex; gap: 20px; margin-top: 32px; flex-wrap: wrap;
         }
@@ -1240,6 +1287,12 @@ export default function AjitKushwahaVanillaStyle() {
           position: relative;
         }
 
+        @media (max-width: 768px) {
+          .documents-container {
+            padding: 10px;
+          }
+        }
+
         .documents-wrapper {
           display: flex;
           justify-content: center;
@@ -1282,8 +1335,8 @@ export default function AjitKushwahaVanillaStyle() {
         @media (max-width: 768px) {
           .document-card {
             position: relative;
-            width: 100%;
-            max-width: 280px;
+            width: calc(100vw - 32px);
+            max-width: 430px;
             height: 360px;
             transform: none !important;
           }
@@ -1340,8 +1393,8 @@ export default function AjitKushwahaVanillaStyle() {
 
         @media (max-width: 768px) {
           .document-card {
-            width: 100%;
-          
+            width: calc(100vw - 32px);
+            max-width: 430px;
             height: 360px;
             transform: none !important;
           }
@@ -1363,6 +1416,16 @@ export default function AjitKushwahaVanillaStyle() {
           position: relative;
         }
 
+        @media (max-width: 768px) {
+          .document-image {
+            justify-content: flex-start;
+          }
+          .document-image img {
+            height: 165px !important;
+            margin-bottom: 12px !important;
+          }
+        }
+
         .document-preview-desc {
           font-size: 11px;
           color: #8FA2B8;
@@ -1375,6 +1438,15 @@ export default function AjitKushwahaVanillaStyle() {
           flex-wrap: wrap;
           gap: 6px;
           margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+          .document-preview-desc {
+            margin-top: 0;
+          }
+          .document-preview-tech {
+            margin-top: 14px;
+          }
         }
 
         .document-preview-tech span {
@@ -1637,7 +1709,11 @@ export default function AjitKushwahaVanillaStyle() {
                   </div>
                 </div>
                 <div className="about-copy">
-                  <p><strong className="text-white">I&apos;ve always cared more about how things work than how they look on a pitch deck.</strong></p>
+                  <p>
+                    <strong className="text-white">
+                      I&apos;ve always cared more about <span className="about-highlight">how things work</span> than how they look on a pitch deck.
+                    </strong>
+                  </p>
                   <p>
                     I started out breaking things on purpose — web servers, UI components,
                     then production databases (once, briefly). Somewhere along the way that
@@ -1645,8 +1721,8 @@ export default function AjitKushwahaVanillaStyle() {
                     working independently as a freelance full-stack developer.
                   </p>
                   <p>
-                    Today, people come to me with a rough idea and a deadline, and I
-                    help turn it into something their customers or team can rely on.
+                    Today, people come to me with a <span className="about-highlight">rough idea and a deadline</span>, and I
+                    help turn it into something <span className="about-pill">their customers or team can rely on</span>.
                     I care deeply about performance optimization, load times, robust type systems,
                     and direct communications.
                   </p>
