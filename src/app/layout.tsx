@@ -206,6 +206,10 @@ export default function RootLayout({
             gtag('config', 'G-JQN2YHH2ZG');
           `}
         </Script>
+        <Script
+          src="https://www.kwicklingo.com/api/widget.js?businessId=business_1784293288592_iliqzaa3a&apiUrl=https://www.kwicklingo.com"
+          strategy="afterInteractive"
+        />
         <Scripts />
       </body>
     </html>
