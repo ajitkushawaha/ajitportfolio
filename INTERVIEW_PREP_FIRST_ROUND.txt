@@ -1,0 +1,352 @@
+INTERVIEW PREP — FIRST CALL ROUND
+Ajit Kushwaha | Full Stack Developer
+
+Goal of first call round:
+Recruiter / HR ko ye clear feel hona chahiye:
+
+"Ajit relevant hai, clearly communicate karta hai, full-stack product work samajhta hai, salary/notice/role fit hai, aur technical round ke layak hai."
+
+First call me usually deep coding nahi hoti. Main focus hota hai:
+- Introduction
+- Current work
+- Skills
+- Projects
+- Salary expectation
+- Notice period / availability
+- Communication confidence
+- Role fit
+
+
+1. 30-SECOND INTRODUCTION
+
+Use this answer:
+
+Hi, I am Ajit Kushwaha, a Full Stack Developer based in Ahmedabad.
+I mainly work with React, Next.js, Node.js, MongoDB, MySQL, REST APIs, and full-stack product development.
+
+I have worked on production web applications, SaaS-style products, admin dashboards, API integrations, and deployment flows.
+Some of my key projects include Next Level Education, Visa4.com, KwickLingo, and ManageMyCafe.
+
+My strength is that I can understand a rough requirement, plan the frontend and backend flow, build the feature, connect APIs, deploy it, and improve it based on feedback.
+I am now looking for a Full Stack Developer role where I can work on scalable product features and production systems.
+
+
+Short version if recruiter says "quick intro":
+
+I am Ajit Kushwaha, a Full Stack Developer with experience in React, Next.js, Node.js, MongoDB, MySQL, and REST APIs.
+I build production-ready web applications, SaaS products, dashboards, and API-driven systems.
+I am currently looking for a full-stack role where I can contribute to real product development and scalable systems.
+
+
+2. RESUME POINTS TO REMEMBER
+
+Keep these points ready during call:
+
+- Current profile: Full Stack Developer / Freelance Full Stack Developer
+- Official experience: Full Stack Developer at ConceptServe Technologies
+- Main stack: React, Next.js, Node.js, MongoDB, MySQL, REST APIs
+- Frontend: React.js, Next.js, React Native, Redux Toolkit, Tailwind CSS, Material UI
+- Backend: Node.js, Express.js, REST APIs, MongoDB, MySQL
+- Deployment/tools: Git, GitHub, Vercel, Render, Railway, Hostinger
+- Strong projects: Next Level Education, Visa4.com, KwickLingo, ManageMyCafe
+- Target role: Full Stack Developer / Product Engineer
+
+
+3. COMMON HR QUESTIONS
+
+Q1. Tell me about yourself.
+
+Answer:
+
+I am a Full Stack Developer with hands-on experience in React, Next.js, Node.js, MongoDB, MySQL, and REST APIs.
+I enjoy building complete product features, not only UI screens.
+I have worked on SaaS-style products, client web platforms, dashboards, and API-driven systems.
+
+My strongest area is taking a requirement from idea to implementation: planning the UI, connecting backend APIs, handling data flow, deploying the project, and improving performance.
+Some projects I can talk about are Next Level Education, Visa4.com, KwickLingo, and ManageMyCafe.
+
+
+Q2. Why are you looking for a job change?
+
+Answer:
+
+I have been working on freelance and product-based projects, which helped me improve ownership, communication, and full-stack delivery.
+Now I want to join a strong engineering team where I can work on larger production systems, collaborate with experienced developers, and grow in a structured product environment.
+
+
+Q3. What kind of role are you looking for?
+
+Answer:
+
+I am looking for a Full Stack Developer role where I can work on React / Next.js frontend, Node.js backend, API integrations, database workflows, and production features.
+I prefer roles where I can take ownership of modules and contribute to product quality, performance, and scalability.
+
+
+Q4. What is your expected salary?
+
+Answer:
+
+Based on my full-stack experience and project ownership, I am looking for a package in the range of 15 to 30 LPA, depending on the role, responsibilities, company, and interview process.
+I am open to discussing it based on the opportunity.
+
+
+If recruiter asks "is it negotiable?":
+
+Yes, I am flexible for the right role and growth opportunity, but I would prefer something aligned with my full-stack experience and current market range.
+
+
+Q5. What is your notice period / availability?
+
+Answer if immediately available:
+
+I am available to join immediately or within a short period, depending on the final discussion and documentation.
+
+Answer if you need time:
+
+I can join within 15 to 30 days. I can confirm the exact timeline after the selection process.
+
+
+Q6. Are you comfortable working from office / hybrid / remote?
+
+Answer:
+
+Yes, I am flexible depending on the role and company expectations.
+I am comfortable with remote, hybrid, or office-based work if the role is aligned with my full-stack development goals.
+
+
+4. PROJECT EXPLANATION FORMAT
+
+Use this structure for every project:
+
+1. What was the problem?
+2. What did I build?
+3. What was my role?
+4. What tech stack did I use?
+5. What was one technical challenge?
+6. What was the result?
+
+Do not explain randomly. Always follow this structure.
+
+
+5. PROJECT 1 — NEXT LEVEL EDUCATION
+
+One-line:
+
+Next Level Education is an online learning platform with course management, student dashboards, and progress tracking.
+
+Detailed answer:
+
+Next Level Education is an education platform focused on online learning and student management.
+The main problem was to create a clean digital learning experience where students can access educational content and admins can manage platform workflows.
+
+My role was to work on full-stack product features, including frontend UI, page flows, API integration, and data-driven components.
+The stack included Next.js, TypeScript, Node.js, and MongoDB.
+
+One important part was keeping the user experience simple while handling education-related workflows like course information, student progress, and structured content.
+
+This project helped me improve my understanding of building scalable education platforms with reusable frontend components and backend-driven data flow.
+
+Short version:
+
+Next Level Education is an online learning platform. I worked on frontend flows, API integration, dashboards, and product pages using Next.js, TypeScript, Node.js, and MongoDB.
+The main focus was creating a clean, scalable education platform experience.
+
+
+6. PROJECT 2 — VISA4.COM
+
+One-line:
+
+Visa4.com is a visa booking and consultancy platform that helps users manage visa-related applications, profiling, documents, and workflow tracking.
+
+Detailed answer:
+
+Visa4.com is a professional visa consultancy and booking platform.
+The problem was to make the visa process easier for users by giving them a structured platform for applicant profiling, document submission, and application workflow.
+
+My role included working on frontend pages, user flows, UI implementation, form-based workflows, and API integration.
+The stack included Next.js, API integration, PostgreSQL-related workflows, and design implementation from Figma.
+
+One challenge in this project was managing complex form flows and keeping the UI simple for users who may not be technical.
+Visa platforms need trust, clarity, and smooth navigation, so the focus was on clean UI, structured content, and reliable user flow.
+
+This project shows my ability to work on real business platforms where user trust and process clarity are important.
+
+Short version:
+
+Visa4.com is a visa booking and consultancy platform. I worked on frontend implementation, forms, application flows, and API integration using Next.js and backend-connected workflows.
+The main focus was building a trustworthy and easy-to-use visa application experience.
+
+
+7. PROJECT 3 — KWICKLINGO
+
+One-line:
+
+KwickLingo is my own AI-powered customer support chat widget product.
+
+Detailed answer:
+
+KwickLingo is an AI-powered customer support chat widget that I built as my own SaaS product.
+The problem was that small businesses need fast customer support without hiring a large support team.
+
+I designed and built the product from product thinking to implementation.
+My role covered frontend, dashboard flow, backend APIs, AI integration, database architecture, deployment, and product iteration.
+
+The stack included Next.js, TypeScript, Node.js, MongoDB, and AI API integration.
+
+One challenge was keeping the product simple for business users while still handling real chat workflows, AI responses, and configuration.
+Another important part was thinking beyond UI: how businesses will add the widget, manage conversations, and use it in production.
+
+This project is important because it shows that I can build and ship my own SaaS product, not only work on assigned frontend tasks.
+
+Short version:
+
+KwickLingo is my own AI support SaaS product. I handled the product idea, frontend, backend APIs, AI integration, database, deployment, and iteration using Next.js, TypeScript, Node.js, and MongoDB.
+
+
+8. PROJECT 4 — MANAGEMYCAFE
+
+One-line:
+
+ManageMyCafe is my own restaurant SaaS product for digital QR menus and online ordering.
+
+Detailed answer:
+
+ManageMyCafe is a restaurant SaaS product that helps cafes and restaurants manage digital menus and ordering workflows.
+The problem was that many restaurants still depend on static menu files or manual ordering processes, which are difficult to update and manage.
+
+I built ManageMyCafe as a full-stack product, including customer-facing pages, restaurant workflow, menu management, backend APIs, database structure, and deployment.
+
+The stack included React, Node.js, Express.js, MongoDB, and full-stack API integration.
+
+One technical challenge was designing the data flow around menus, restaurant configuration, customer browsing, and order-related workflows.
+The goal was to keep it simple for restaurant owners while still making it useful for real business operations.
+
+This project shows my ability to build a real product around a business workflow, not just a portfolio demo.
+
+Short version:
+
+ManageMyCafe is my own restaurant SaaS product for digital menus and ordering. I handled product UX, frontend, backend APIs, database structure, and deployment using React, Node.js, Express, and MongoDB.
+
+
+9. TECHNICAL QUESTIONS TO REVISE BEFORE CALL
+
+React:
+- What is React?
+- What are components?
+- Props vs state
+- useState
+- useEffect
+- useMemo
+- useCallback
+- Controlled vs uncontrolled components
+- Conditional rendering
+- List rendering and keys
+
+Next.js:
+- What is Next.js?
+- SSR vs SSG
+- App Router basics
+- Dynamic routing
+- API routes / server actions basics
+- Image optimization
+- SEO benefits
+
+JavaScript:
+- let, const, var
+- map, filter, reduce
+- promises
+- async / await
+- closures basics
+- event loop basics
+- spread/rest operator
+- destructuring
+
+Backend:
+- Node.js basics
+- Express.js routing
+- Middleware
+- REST API methods: GET, POST, PUT, PATCH, DELETE
+- Authentication flow
+- JWT basics
+- CORS
+
+Database:
+- MongoDB collections and documents
+- MySQL tables and relations
+- Basic indexes
+- CRUD operations
+- Schema design basics
+
+Deployment:
+- Vercel
+- Render
+- Railway
+- Hostinger
+- Environment variables
+- GitHub deployment flow
+
+
+10. IF THEY ASK ABOUT DSA
+
+Answer:
+
+I am comfortable with JavaScript problem solving, arrays, strings, objects, async logic, debugging, and practical coding problems.
+For advanced DSA, I am actively improving.
+My strongest area is building production full-stack applications, APIs, dashboards, and product features.
+
+
+11. IF THEY ASK ABOUT AI TOOLS
+
+Answer:
+
+I use AI tools to improve productivity, debug faster, generate ideas, and speed up repetitive implementation work.
+But I always review the code, understand the logic, test the output, and make sure it fits the project architecture.
+
+
+12. QUESTIONS TO ASK RECRUITER
+
+Ask 2 questions at the end:
+
+1. Can you tell me more about the product and the main responsibilities of this role?
+2. What kind of projects or modules would I work on in the first 3 months?
+3. What is the interview process after this round?
+
+
+13. CALL DAY CHECKLIST
+
+Before call:
+
+- Resume open
+- Portfolio open
+- GitHub open
+- LinkedIn open
+- Quiet place
+- Earphones ready
+- Internet stable
+- Salary expectation ready
+- Notice period ready
+- 2-4 project explanations ready
+
+
+14. BEST CLOSING LINE
+
+Use this at the end:
+
+Thank you for the call.
+The role sounds aligned with my full-stack experience, especially around building product features and scalable web applications.
+I would be happy to continue with the next round.
+
+
+15. MAIN MINDSET
+
+Do not sound like:
+"I only know React."
+
+Sound like:
+"I build product features end-to-end."
+
+Do not over-explain.
+Keep answers clear, short, and confident.
+Recruiter should feel:
+"Ajit is relevant, stable, clear, and worth sending to the technical round."
+

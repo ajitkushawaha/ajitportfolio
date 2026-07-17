@@ -1,6 +1,7 @@
 import React from 'react'
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 import Scripts from '@/components/Scripts'
 
@@ -193,6 +194,18 @@ export default function RootLayout({
       </head>
       <body>
         {children}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-JQN2YHH2ZG"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-JQN2YHH2ZG');
+          `}
+        </Script>
         <Scripts />
       </body>
     </html>
