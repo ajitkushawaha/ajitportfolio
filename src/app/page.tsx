@@ -59,7 +59,7 @@ const resumeTimeline = [
     color: 'purple',
     title: 'Full Stack Developer',
     company: 'Freelance',
-    period: 'Nov 2024 - Present',
+    period: 'Oct 2024 - Present',
     description: 'Building and shipping production SaaS products across frontend, backend, databases, integrations, and deployment.',
     details: [
       'Build full-stack SaaS applications with Next.js, Node.js, and PostgreSQL',
@@ -1588,7 +1588,7 @@ export default function AjitKushwahaVanillaStyle() {
                 <div className="hero-actions">
                   <a href="/projects" className="btn btn-primary">View the work →</a>
                   <a href="#contact" className="btn btn-ghost">Discuss an opportunity</a>
-                  <a href="/AJIT_KUSHWAHA.pdf" download="Ajit-Kushwaha-Resume.pdf" className="btn btn-ghost">Download résumé ↓</a>
+                  <a href="/ajit_kushwaha.pdf" download="ajit_kushwaha.pdf" className="btn btn-ghost">Download résumé ↓</a>
                 </div>
               </div>
 
@@ -1846,7 +1846,7 @@ export default function AjitKushwahaVanillaStyle() {
                 <div className="contact-actions">
                   <a href="mailto:ajit.kushwaha.work@gmail.com" className="btn btn-primary">Email me →</a>
                   <a href="https://www.linkedin.com/in/ajitreact/" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">LinkedIn</a>
-                  <a href="/AJIT_KUSHWAHA.pdf" download="Ajit-Kushwaha-Resume.pdf" className="btn btn-ghost">Download résumé ↓</a>
+                  <a href="/ajit_kushwaha.pdf" download="ajit_kushwaha.pdf" className="btn btn-ghost">Download résumé ↓</a>
                 </div>
               </div>
             </section>

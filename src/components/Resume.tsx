@@ -23,7 +23,7 @@ export default function Resume({ isActive }: ResumeProps) {
     {
       title: 'Freelance Full Stack Developer',
       company: 'Freelance',
-      period: 'Nov 2024 - Present',
+      period: 'Oct 2024 - Present',
       description: 'Designing and building full-stack SaaS products using React, Next.js, Node.js, and modern databases. Responsible for product development, APIs, integrations, deployments, and production support.'
     }
     ,
