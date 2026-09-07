@@ -9,7 +9,7 @@ export default function Resume({ isActive }: ResumeProps) {
   const education = [
     {
       title: 'Master of Computer Application',
-      period: '2021 — 2024',
+      period: '2021 — 2023',
       description: 'Rajasthan Institute of Engineering and Technology Completed MCA degree with a specialization in Frontend Development. Developed a comprehensive case study on React.js, showcasing expertise in building interactive user interfaces and single-page applications.'
     },
     {
@@ -21,12 +21,11 @@ export default function Resume({ isActive }: ResumeProps) {
 
   const experience = [
     {
-      title: 'Freelance Full Stack Developer',
-      company: 'Freelance',
-      period: 'Nov 2024 - Present',
-      description: 'Designing and building full-stack SaaS products using React, Next.js, Node.js, and modern databases. Responsible for product development, APIs, integrations, deployments, and production support.'
-    }
-    ,
+      title: 'Full Stack Developer',
+      company: 'HDH Technologies Pvt. Ltd',
+      period: 'Oct 2024 - July 2026',
+      description: 'Developed and delivered production-ready web and mobile applications for businesses and startups. Built SaaS platforms including KwickLingo AI, ManageMy.Cafe, and Visa4, HaritGraam QuickCommerce.'
+    },
 
     {
       title: 'React Developer',

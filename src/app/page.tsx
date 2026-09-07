@@ -58,13 +58,13 @@ const resumeTimeline = [
     badge: 'STEP 1',
     color: 'purple',
     title: 'Full Stack Developer',
-    company: 'Freelance',
-    period: 'Nov 2024 - Present',
-    description: 'Building and shipping production SaaS products across frontend, backend, databases, integrations, and deployment.',
+    company: 'HDH Technologies Pvt. Ltd',
+    period: 'Oct 2024 - July 2026',
+    description: 'Developed and delivered production-ready web and mobile applications for businesses and startups.',
     details: [
-      'Build full-stack SaaS applications with Next.js, Node.js, and PostgreSQL',
-      'Design APIs, authentication flows, data models, and AI integrations',
-      'Own production deployments, debugging, and technical documentation'
+      'Built SaaS platforms including KwickLingo AI, ManageMy.Cafe, and Visa4',
+      'Integrated AI APIs, payment gateways, Firebase, WebSockets, and third-party APIs',
+      'Managed deployment and published applications on Play Store & App Store'
     ],
     image: '/assets/images/project-1.png',
     active: true
@@ -104,7 +104,7 @@ const resumeTimeline = [
     color: 'green',
     title: 'Master of Computer Application (MCA)',
     company: 'RIET, Jaipur',
-    period: '2021 — 2024',
+    period: '2021 — 2023',
     description: 'Specialized in Advanced Web Systems, Object Oriented Design, and Frontend Framework architectures.',
     details: [
       'Comprehensive research/thesis on React.js state engines',
@@ -139,7 +139,7 @@ const skillColors: Record<string, string> = {
   'REST APIs': '#FF6B35', 'Socket.io': '#8A8A8A', 'WebSocket': '#4F7FA3', 'Git': '#F05032',
   'GitHub': '#8A8A8A', 'AI Integration': '#10A37F', 'Sensors': '#7C3AED', 'Render': '#46E3B7',
   'Railway': '#A855F7', 'Vercel': '#888888', 'Hostinger': '#673DE6', 'GoDaddy': '#1BDBDB',
-  'RTSP Streaming': '#EF4444', 'IoT': '#0EA5E9'
+  'RTSP Streaming': '#EF4444', 'IoT': '#0EA5E9', 'Zustand': '#764ABC', 'Firebase': '#FFCA28'
 }
 
 const skills = [
@@ -1588,13 +1588,13 @@ export default function AjitKushwahaVanillaStyle() {
                 <div className="hero-actions">
                   <a href="/projects" className="btn btn-primary">View the work →</a>
                   <a href="#contact" className="btn btn-ghost">Discuss an opportunity</a>
-                  <a href="/AJIT_KUSHWAHA.pdf" download="Ajit-Kushwaha-Resume.pdf" className="btn btn-ghost">Download résumé ↓</a>
+                  <a href="/AJIT_KUSHWAHA_RESUME.pdf" download="Ajit_Kushwaha_Resume.pdf" className="btn btn-ghost">Download résumé ↓</a>
                 </div>
               </div>
 
               <div className="spec-panel">
                 <div className="spec-item"><div className="k">Based in</div><div className="v text-white">Ahmedabad, India</div></div>
-                <div className="spec-item"><div className="k">Experience</div><div className="v text-white">3+ years</div></div>
+                <div className="spec-item"><div className="k">Experience</div><div className="v text-white">3 years</div></div>
                 <div className="spec-item"><div className="k">Focus</div><div className="v text-white">SaaS / Full-stack</div></div>
                 <div className="spec-item"><div className="k">Status</div><div className="v text-white">Open to roles</div></div>
               </div>
@@ -1846,7 +1846,7 @@ export default function AjitKushwahaVanillaStyle() {
                 <div className="contact-actions">
                   <a href="mailto:ajit.kushwaha.work@gmail.com" className="btn btn-primary">Email me →</a>
                   <a href="https://www.linkedin.com/in/ajitreact/" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">LinkedIn</a>
-                  <a href="/AJIT_KUSHWAHA.pdf" download="Ajit-Kushwaha-Resume.pdf" className="btn btn-ghost">Download résumé ↓</a>
+                  <a href="/AJIT_KUSHWAHA_RESUME.pdf" download="Ajit_Kushwaha_Resume.pdf" className="btn btn-ghost">Download résumé ↓</a>
                 </div>
               </div>
             </section>
